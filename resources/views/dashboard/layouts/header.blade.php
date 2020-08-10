@@ -65,7 +65,7 @@
                                     <span class="mr-1 d-flex-inline">
                                         <span class="text-light"> {{ auth()->user()->name }} </span>
                                     </span>
-                            <img src="{{ asset('dashboard/images/avatar/demi.png') }}" class="rounded-circle" width="32" alt="Frontted">
+                            <img src="{{ auth()->user()->user_image  }}" class="rounded-circle" width="32" alt="Frontted">
                         </a>
                         <div id="account_menu" class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-item-text dropdown-item-text--lh">
@@ -73,16 +73,16 @@
                                 <div class="text-muted"> @ {{ auth()->user()->email }} </div>
                             </div>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="index.html"><i class="material-icons">dvr</i> {{ __('admin.dashboard') }}</a>
+                            <a class="dropdown-item" href="{{ url('admin/dashboard') }}"><i class="material-icons">dvr</i> {{ __('admin.dashboard') }}</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                 {{ __('admin.logout') }}
                             </a>
-
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
+                            <a class="dropdown-item" href="{{ route('edit.profile') }}"><i class="fa fa-edit"></i> {{ __('admin.edit_profile') }} </a>
                         </div>
                     </li>
                 </ul>

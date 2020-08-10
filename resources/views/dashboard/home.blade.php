@@ -66,6 +66,16 @@
                     <div class="text-amount">{{ $website_color }}</div>
                     <div class="card-header__title  mb-2">{{ __('admin.website_color') }}</div>
                 </div>
+                <div class="card card-body text-center">
+                    <div class="mb-1"><i class="icon-muted icon-40pt fa fa-user-friends"></i></div>
+                    <div class="text-amount">{{ $visitors_count }}</div>
+                    <div class="card-header__title  mb-2">{{ __('admin.visitors') }}</div>
+                </div>
+                <div class="card card-body text-center">
+                    <div class="mb-1"><i class="icon-muted icon-40pt fa fa-user"></i></div>
+                    <div class="text-amount">{{ $most_visited }}</div>
+                    <div class="card-header__title  mb-2">{{ $most_visited_page .'  '.  __('admin.most_visited') }}</div>
+                </div>
             </div>
         </div>
         <!-- // END drawer-layout__content -->

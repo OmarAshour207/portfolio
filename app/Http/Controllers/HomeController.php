@@ -9,7 +9,9 @@ use App\Service;
 use App\Slider;
 use App\TeamMember;
 use App\Testimonial;
+use App\Visitor;
 use App\WebsiteSetting;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,8 @@ class HomeController extends Controller
 
     public function HomePage()
     {
+        $this->checkVisitor();
+
         session('lang') ?? session()->put('lang', app()->getLocale());
         $websiteSettings = WebsiteSetting::first();
         $page_filter = $websiteSettings->page_filter != null ? unserialize($websiteSettings->page_filter) : '';
@@ -42,8 +46,37 @@ class HomeController extends Controller
                             'testimonials', 'blogs'));
     }
 
+    public function checkVisitor()
+    {
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $page = \Request::segment(1) ?? 'home';
+
+        $visitors = Visitor::where('ip', $ip)
+                ->where('page', $page)
+                ->get();
+
+        if($visitors->count() > 0) {
+            foreach ($visitors as $visitor) {
+                if($visitor->created_at->addDay() < Carbon::now()) {
+                    $this->createVisitor($ip, $page);
+                }
+            }
+        }else {
+            $this->createVisitor($ip, $page);
+        }
+    }
+
+    protected function createVisitor($ip, $page)
+    {
+        Visitor::create([
+            'ip'    => $ip,
+            'page'  => $page
+        ]);
+    }
+
     public function aboutPage()
     {
+        $this->checkVisitor();
         $about = About::first();
         $testimonials = Testimonial::orderBy('id', 'desc')->limit(3)->get();
         $teamMembers = TeamMember::orderBy('id', 'desc')->limit(4)->get();
@@ -52,6 +85,7 @@ class HomeController extends Controller
 
     public function blogsPage()
     {
+        $this->checkVisitor();
         $blogs = Blog::paginate(4);
         return view('site.blogs', compact('blogs'));
     }
@@ -64,6 +98,7 @@ class HomeController extends Controller
 
     public function projectsPage()
     {
+        $this->checkVisitor();
         $projects = Project::orderBy('id', 'desc')->limit(3)->get();
         $about = About::first();
         return view('site.projects', compact('projects', 'about'));
@@ -71,6 +106,7 @@ class HomeController extends Controller
 
     public function servicesPage()
     {
+        $this->checkVisitor();
         $services = Service::orderBy('id', 'desc')->limit(6)->get();
         return view('site.services', compact('services'));
     }
@@ -79,5 +115,11 @@ class HomeController extends Controller
     {
         $service = Service::FindOrFail($id);
         return view('site.single_service', compact('service'));
+    }
+
+    public function contact()
+    {
+        $this->checkVisitor();
+        return view('site.contact');
     }
 }

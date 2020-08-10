@@ -58,7 +58,7 @@
 </head>
 <body id="bg">
 <div class="page-wraper">
-{{--    <div id="loading-area"></div>--}}
+    <div id="loading-area"></div>
 
     @include('site.layouts.header')
 

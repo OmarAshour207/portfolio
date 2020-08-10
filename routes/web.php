@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@HomePage');
 Route::get('/about', 'HomeController@aboutPage');
 
-Route::get('/contact-us', 'ContactController@index');
+Route::get('/contact-us', 'HomeController@contact');
 Route::post('/send/contact', 'ContactController@sendContact')->name('send.contact');
 
 Route::get('/services', 'HomeController@servicesPage');
@@ -67,4 +67,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 
     Route::post('upload/image', 'ImageController@uploadPhoto')->name('upload.image');
     Route::post('remove/image', 'ImageController@removePhoto')->name('remove.image');
+
+    Route::get('profile/edit', 'ProfileController@edit')->name('edit.profile');
+    Route::post('profile/edit', 'ProfileController@update')->name('update.profile');
 });

@@ -33,19 +33,6 @@
     @endif
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-133433427-1');
-    </script>
-
     <link href="{{ asset('dashboard/css/noty.css') }}" rel="stylesheet">
     <script src="{{ asset('dashboard/js/noty.js') }}" type="text/javascript"></script>
 
