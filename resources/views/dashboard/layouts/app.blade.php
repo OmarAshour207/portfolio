@@ -59,16 +59,6 @@
     </div>
 </div>
 
-{{--<!-- App Settings FAB -->--}}
-{{--<div id="app-settings">--}}
-{{--    <app-settings layout-active="default" :layout-location="{--}}
-{{--      'default': 'companies.html',--}}
-{{--      'fixed': 'fixed-companies.html',--}}
-{{--      'fluid': 'fluid-companies.html',--}}
-{{--      'mini': 'mini-companies.html'--}}
-{{--    }"></app-settings>--}}
-{{--</div>--}}
-
 <!-- jQuery -->
 <script src="{{ asset('dashboard/vendor/jquery.min.js') }}"></script>
 
@@ -104,6 +94,24 @@
 
 <script src="{{ asset('dashboard/vendor/dropzone.min.js') }}"></script>
 <script src="{{ asset('dashboard/js/dropzone.js') }}"></script>
+
+<!-- Global Settings -->
+<script src="{{ asset('dashboard/js/settings.js') }}"></script>
+
+<!-- Moment.js -->
+<script src="{{ asset('dashboard/vendor/moment.min.js') }}"></script>
+<script src="{{ asset('dashboard/vendor/moment-range.js') }}"></script>
+
+
+<script src="{{ asset('dashboard/vendor/Chart.min.js') }}"></script>
+
+<script src="{{ asset('dashboard/js/charts.js') }}"></script>
+<script src="{{ asset('dashboard/js/chartjs-rounded-bar.js') }}"></script>
+
+<!-- Chart Samples -->
+<script src="{{ asset('dashboard/js/page.dashboard.js') }}"></script>
+<script src="{{ asset('dashboard/js/progress-charts.js') }}"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {

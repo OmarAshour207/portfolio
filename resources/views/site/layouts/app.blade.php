@@ -24,13 +24,26 @@
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- STYLESHEETS -->
+
+
+{{--    @if(session('lang') == 'ar')--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins-rtl.min.css') }}">--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome-rtl.css') }}">--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">--}}
+{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.css') }}">--}}
+{{--    @elseif(session('lang') == 'en')--}}
+{{--    @endif--}}
+
     <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+
+
     @php
         $colors = [
             'orange'        => 1,
@@ -52,6 +65,11 @@
         @endif
     @endforeach
     <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('site/plugins/swiper/swiper-bundle.min.css') }}">
+
+    @stack('styles')
+
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap">
 
@@ -83,7 +101,9 @@
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 
+<script src="{{ asset('site/plugins/swiper/swiper-bundle.min.js') }}"></script>
 
+@stack('scripts')
 <script>
     jQuery(document).ready(function() {
         'use strict';

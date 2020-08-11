@@ -6,7 +6,7 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-dark">
-                    <a href="{{ url('/') }}"><img src="{{ getLogo() != 'null' ??'' }}" alt=""></a>
+                    <a href="{{ url('/') }}"><img src="{{ getLogo() }}" alt=""></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

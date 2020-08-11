@@ -135,9 +135,9 @@
             </ul>
 
             <div class="d-flex align-items-center sidebar-p-a border-bottom sidebar-account">
-                <a href="profile.html" class="flex d-flex align-items-center text-underline-0 text-body">
+                <a href="{{ route('edit.profile') }}" class="flex d-flex align-items-center text-underline-0 text-body">
                     <span class="avatar avatar-sm mr-2">
-                        <img src="{{ asset('dashboard/images/avatar/demi.png') }}" alt="avatar" class="avatar-img rounded-circle">
+                        <img src="{{ auth()->user() ->user_image}}" alt="avatar" class="avatar-img rounded-circle">
                     </span>
                     <span class="flex d-flex flex-column">
                         <strong>{{ auth()->user()->name }}</strong>

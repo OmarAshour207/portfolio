@@ -103,6 +103,10 @@ return [
     'confirm_password'      => 'تأكيد كلمه السر',
     'profile_settings'      => 'أعدادات الملف الشخصي',
     'full_name'             => 'الأسم بالكامل',
+    'visitors_through_month'=> 'عدد الزيارات خلال هذا الشهر',
+    'pages_visitors'        => 'زوار الصفحات',
+    'from'                  => 'من',
+    'to'                    => 'الي',
 
 
 ];

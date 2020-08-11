@@ -1,41 +1,77 @@
+@push('styles')
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-wrapper .swiper_img {
+            width: 100%;
+            height: 700px;
+        }
+        .swiper_title {
+            position: fixed;
+            color: white;
+            width: 250px;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 50px;
+        }
+        .swiper_desc {
+            position: fixed;width: 500px;text-align: center;margin-top: 25px;padding-top: 100px;
+        }
+    </style>
+@endpush
+
 @extends('site.layouts.app')
 
 @section('content')
     <!-- Content -->
     <div class="page-content bg-white">
-        <!-- Main Slider -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                @foreach($sliders as $index => $slider)
-                    <div class="carousel-item {{ $index+1 == 1 ? 'active' : '' }}">
-                        <img class="d-block w-100" style="height: 700px !important;" src="{{ $slider->slider_image }}" alt="image slide">
-                        <div class="carousel-caption d-none d-md-block text-white">
-                            @php
-                                $title = session('lang') . '_title';
-                                $desc = session('lang') . '_description';
-                            @endphp
-                            <div style="margin-bottom: 100px;"> {!! $slider->$title !!} </div>
-                            <p> {!! $slider->$desc !!} </p>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                @foreach($sliders as $slider)
+                    <div class="swiper-slide">
+                        @php
+                            $title = session('lang') . '_title';
+                            $desc = session('lang') . '_description';
+                        @endphp
+                        <img src="{{ $slider->slider_image }}" class="swiper_img">
+                        <div class="text-white swiper_title">
+                            {!! $slider->$title !!}
+                        </div>
+                        <div class="text-white swiper_desc">
+                            {!! $slider->$desc !!}
                         </div>
                     </div>
-
                 @endforeach
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <!-- Main Slider -->
 
         @if ($page_filter != null)
             <!-- contact area -->
@@ -320,3 +356,24 @@
     </div>
     <!-- Content END-->
 @endsection
+
+@push('scripts')
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+@endpush

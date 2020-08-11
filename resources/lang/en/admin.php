@@ -103,5 +103,9 @@ return [
     'confirm_password'      => 'Confirm Password',
     'profile_settings'      => 'Profile Settings',
     'full_name'             => 'Full Name',
+    'visitors_through_month'=> 'Visitors Through Month',
+    'pages_visitors'        => 'Pages Visitors',
+    'from'                  => 'From',
+    'to'                    => 'To',
 
 ];
