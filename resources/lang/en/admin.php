@@ -107,5 +107,10 @@ return [
     'pages_visitors'        => 'Pages Visitors',
     'from'                  => 'From',
     'to'                    => 'To',
+    'themes'                => 'Themes',
+    'used_theme'            => 'Used Theme',
+    'change'                => 'Change',
+    'view'                  => 'View',
+    'contact_us'            => 'Contact Us',
 
 ];

@@ -33,7 +33,7 @@ Route::get('/lang/{language}', 'HomeController@changeLanguage');
 // Admin ROUTES
 Auth::routes(['register' => false]);
 
-Route::get('lang/{lang}','LanguageController@changeLanguage')->name('admin.lang');
+Route::get('lang/{lang}','Admin\LanguageController@changeLanguage')->name('admin.lang');
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth'] , function () {
 
@@ -55,6 +55,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 
     Route::resource('team-members', 'TeamMemberController');
 
+    Route::resource('contactus', 'ContactUsController');
+
     Route::get('settings/contact-info', 'ContactInfoController@contactInfo')->name('settings.contact');
     Route::post('settings/contact-info', 'ContactInfoController@store')->name('settings.contact.store');
 
@@ -70,4 +72,9 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 
     Route::get('profile/edit', 'ProfileController@edit')->name('edit.profile');
     Route::post('profile/edit', 'ProfileController@update')->name('update.profile');
+
+    Route::get('themes', 'ThemeController@index')->name('themes.index');
+    Route::post('themes/{id}', 'ThemeController@changeTheme')->name('themes.change');
+
+    Route::get('themes/{name}', 'ThemeController@showTheme')->name('theme.show');
 });

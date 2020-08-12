@@ -115,6 +115,13 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+            }
+        });
+
         $(document).on('click', '.delete', function (e) {
             var that = $(this);
             e.preventDefault();

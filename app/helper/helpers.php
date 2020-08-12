@@ -27,3 +27,9 @@ function getColor()
     $settings = \App\WebsiteSetting::first();
     return $settings->color;
 }
+
+function getThemeName()
+{
+    $theme = \App\Theme::where('status', 1)->first();
+    return $theme->en_title;
+}

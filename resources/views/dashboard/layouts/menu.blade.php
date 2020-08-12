@@ -12,9 +12,8 @@
                     <ul class="sidebar-submenu collapse" id="dashboards_menu">
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="{{ url('admin/dashboard') }}">
-                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">assessment
-                                </i>
-                                <span class="sidebar-menu-text"> Default </span>
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-chart-bar"></i>
+                                <span class="sidebar-menu-text"> {{ __('admin.stat') }} </span>
                             </a>
                         </li>
                     </ul>
@@ -70,6 +69,13 @@
                 </li>
 
                 <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-button" href="{{ route('contactus.index') }}">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left  fa fa-phone"></i>
+                        <span class="sidebar-menu-text">  {{ __('admin.contact_us') }} </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item">
                     <a class="sidebar-menu-button" href="{{ route('blogs.index') }}">
                         <i class="sidebar-menu-icon sidebar-menu-icon--left  fa fa-book-open"></i>
                         <span class="sidebar-menu-text">  {{ __('admin.blogs') }} </span>
@@ -105,6 +111,12 @@
                             <a class="sidebar-menu-button" href="{{ route('logos.index') }}">
                                 <i class="fa fa-camera"></i>
                                 <span class="sidebar-menu-text"> {{ __('admin.logo') }}</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="{{ route('themes.index') }}">
+                                <i class="fa fa-cogs"></i>
+                                <span class="sidebar-menu-text"> {{ __('admin.themes') }}</span>
                             </a>
                         </li>
                     </ul>
