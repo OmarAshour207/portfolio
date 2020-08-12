@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75a696d1-bdcc-4b4f-9658-7cf8a07a4f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helper/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/blogs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/blogs/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/blogs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/blogs/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/projects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/projects/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/projects/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/about.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/blogs.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/contact.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/layouts/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/layouts/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/layouts/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/projects.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/services.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/single_blog.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/single_service.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="75a696d1-bdcc-4b4f-9658-7cf8a07a4f67" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +147,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/backup/htdocs/ecommerce_upgrade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restaurant" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -204,7 +179,7 @@
       <workItem from="1596972315254" duration="8140000" />
       <workItem from="1597054403679" duration="27084000" />
       <workItem from="1597142819799" duration="19673000" />
-      <workItem from="1597230773507" duration="25410000" />
+      <workItem from="1597230773507" duration="25582000" />
     </task>
     <servers />
   </component>
@@ -216,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1597253547796" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1597234620401">
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1597260412681">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597234620401" />
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597260412681" />
     <state x="604" y="357" key="NewPhpFileDialog" timestamp="1597259759166">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
