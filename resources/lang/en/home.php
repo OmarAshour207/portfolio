@@ -53,4 +53,8 @@ return [
     'full_name'             => 'Full Name',
     'optional'              => 'Optional',
     'email'                 => 'E-mail',
+    'office_hours'          => 'Office Hours',
+    'hesitate'              => 'Don’t Hesitate To Ask',
+    'message'               => 'Message',
+    'happy_customers_said'  => 'Happy Customer Said',
 ];

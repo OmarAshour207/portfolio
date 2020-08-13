@@ -1,16 +1,33 @@
-@extends('site.first.layouts.app')
+@extends('site.fourth.layouts.app')
 
 @section('content')
     <!-- Content -->
     <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url({{ asset('site/images/banner/bnr1.jpg') }});">
+            <div class="container">
+                <div class="dlab-bnr-inr-entry">
+                    <h1 class="text-white">{{ __('home.contact_us') }}</h1>
+                    <!-- Breadcrumb row -->
+                    <div class="breadcrumb-row">
+                        <ul class="list-inline">
+                            <li><a href="{{ url('/') }}">{{ __('home.home') }}</a></li>
+                            <li>{{ __('home.contact_us') }}</li>
+                        </ul>
+                    </div>
+                    <!-- Breadcrumb row END -->
+                </div>
+            </div>
+        </div>
+        <!-- inner page banner END -->
         <!-- Contact Form -->
-        <div class="section-full content-inner contact-page-9 overlay-black-dark" style="background-image: url({{ asset('site/images/background/bg5.jpg') }}); background-position: 30% 100%">
+        <div class="section-full content-inner contact-page-8 bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 text-white">
+                    <div class="col-lg-4 col-md-12">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 m-b30">
-                                <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-bx-wraper expertise bx-style-1 p-a20 radius-sm">
                                     <div class="icon-content">
                                         <h5 class="dlab-tilte">
                                             <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span>
@@ -24,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-6 m-b30">
-                                <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-bx-wraper expertise bx-style-1 p-a20 radius-sm">
                                     <div class="icon-content">
                                         <h5 class="dlab-tilte">
                                             <span class="icon-sm text-primary"><i class="ti-email"></i></span>
@@ -35,14 +52,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-6 m-b30">
-                                <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-bx-wraper expertise bx-style-1 p-a20 radius-sm">
                                     <div class="icon-content">
                                         <h5 class="dlab-tilte">
                                             <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
                                             {{ __('home.phone') }}
                                         </h5>
                                         <p class="m-b0">{{ setting('phone') }}</p>
-                                    </div>
+\                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -51,9 +68,8 @@
                         @if (session('success'))
                             <h3 class="alert alert-success"> {{ __('home.sent_successfully') }} </h3>
                         @endif
-                        <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s" method="post" action="{{ route('send.contact') }}">
-                            @csrf
-                            <h3 class="title-box font-weight-300 m-t0 m-b10"> {{ __('home.convert_idea') }} <span class="bg-primary"></span></h3>
+                        <form class="inquiry-form wow fadeInUp" data-wow-delay="0.2s">
+                            <h3 class="title-box font-weight-300 m-t0 m-b10">{{ __('home.convert_idea') }} <span class="bg-primary"></span></h3>
                             @php $desc = session('lang'). '_description'; @endphp
                             <p> {!! $contactUs->$desc !!} </p>
                             <div class="row">
@@ -101,5 +117,5 @@
         <!-- Contact Form END -->
     </div>
     <!-- Content END-->
-    <br>
+    </br>
 @endsection

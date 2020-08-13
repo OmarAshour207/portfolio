@@ -30,10 +30,10 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="{{ url('/') }}"><img src="{{ asset('site/images/logo.png') }}" alt=""></a>
+                        <a href="{{ url('/') }}"><img src="{{ getLogo() }}" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="{{ setActiveHome('') }} has-mega-menu homedemo">
+                        <li class="{{ setActiveHome('') }}">
                             <a href="{{ url('/') }}">
                                 <i class="fa fa-home" style="font-size: 18px;"></i> {{ __('home.home') }}
                             </a>
@@ -49,7 +49,7 @@
                             <a href="{{ url('services') }}"> {{ __('home.our_services') }} </a>
                         </li>
 
-                        <li class="{{ setActive('projects') }} has-mega-menu">
+                        <li class="{{ setActive('projects') }} ">
                             <a href="{{ url('projects') }}"> {{ trans('home.our_projects') }}</a>
                         </li>
 

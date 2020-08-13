@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('site.third.layouts.app')
 
 @section('content')
     <!-- Content -->
@@ -54,7 +54,8 @@
                         <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s" method="post" action="{{ route('send.contact') }}">
                             @csrf
                             <h3 class="title-box font-weight-300 m-t0 m-b10"> {{ __('home.convert_idea') }} <span class="bg-primary"></span></h3>
-                            <p>{{ __('home.lorem_ipsum') }}</p>
+                            @php $desc = session('lang'). '_description'; @endphp
+                            <p> {!! $contactUs->$desc !!} </p>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">

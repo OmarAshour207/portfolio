@@ -1,4 +1,4 @@
-@extends('site.second.layouts.app')
+@extends('site.fourth.layouts.app')
 
 @section('content')
     <!-- Content -->

@@ -14,6 +14,7 @@ use App\Visitor;
 use App\WebsiteSetting;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -26,6 +27,7 @@ class HomeController extends Controller
 
     public function HomePage()
     {
+//        dd(\request()->segment(1));
         $this->checkVisitor();
 
         session('lang') ?? session()->put('lang', app()->getLocale());
@@ -56,12 +58,14 @@ class HomeController extends Controller
         $visitors = Visitor::where('ip', $ip)
                 ->where('page', $page)
                 ->get();
+        $visitors = DB::table('visitors')->where('ip', $ip)->latest()->first();
 
-        if($visitors->count() > 0) {
-            foreach ($visitors as $visitor) {
-                if($visitor->created_at->addDay() < Carbon::now()) {
-                    $this->createVisitor($ip, $page);
-                }
+        if($visitors != null) {
+            $created = $visitors->created_at;
+            $afterDay = date( 'Y:m:d H:i:s', (strtotime($created) + (24 * 60 * 60)));
+
+            if($afterDay < Carbon::now()) {
+                $this->createVisitor($ip, $page);
             }
         }else {
             $this->createVisitor($ip, $page);
@@ -82,9 +86,11 @@ class HomeController extends Controller
         $about = About::first();
         $testimonials = Testimonial::orderBy('id', 'desc')->limit(3)->get();
         $teamMembers = TeamMember::orderBy('id', 'desc')->limit(4)->get();
+        $name = getThemeName();
+        $services = $name == 'second' || $name =='fourth' ? Service::orderBy('id', 'desc')->limit(6)->get() : '';
 
-        return view('site.' . getThemeName() . '.about',
-            compact('about', 'testimonials', 'teamMembers'));
+        return view('site.' . $name . '.about',
+            compact('about', 'testimonials', 'teamMembers', 'services'));
     }
 
     public function blogsPage()
@@ -111,8 +117,12 @@ class HomeController extends Controller
     public function servicesPage()
     {
         $this->checkVisitor();
+        $name = getThemeName();
         $services = Service::orderBy('id', 'desc')->limit(6)->get();
-        return view('site.' . getThemeName() . '.services', compact('services'));
+
+        $contactUs = $name == 'second' || $name == 'fourth' ? Contactus::first() : '';
+        $aboutUs = $name == 'second' || $name == 'fourth' ? About::first() : '';
+        return view('site.' . $name . '.services', compact('services', 'contactUs', 'aboutUs'));
     }
 
     public function SingleService($id, $title)

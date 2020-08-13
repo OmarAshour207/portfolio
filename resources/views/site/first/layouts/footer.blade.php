@@ -69,7 +69,7 @@
     <div class="footer-bottom footer-line">
         <div class="container">
             <div class="footer-bottom-in">
-                <div class="footer-bottom-logo"><a href="index.html"><img src="{{ asset('site/images/logo-light.png') }}" alt=""/></a></div>
+                <div class="footer-bottom-logo"><a href="{{ url('/') }}"><img src="{{ asset('site/images/logo-light.png') }}" alt=""/></a></div>
                 <div class="footer-bottom-social">
                     <ul class="dlab-social-icon dez-border">
                         @php

@@ -82,13 +82,14 @@
 
     @include('site.second.layouts.footer')
 
-    <button class="scroltop style1 radius white" type="button"><i class="fa fa-arrow-up"></i></button>
+    <button class="scroltop style3 radius" type="button"><i class="fa fa-arrow-up"></i></button>
 </div>
 
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="{{ asset('site/js/combining.js') }}"></script><!-- CONTACT JS  -->
 <script src="{{ asset('site/js/jquery.lazy.min.js') }}"></script>
 
+<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script src="{{ asset('site/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
 <script src="{{ asset('site/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
 <script src="{{ asset('site/js/rev.slider.js') }}"></script>
@@ -97,7 +98,6 @@
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 
 
@@ -105,7 +105,7 @@
 <script>
     jQuery(document).ready(function() {
         'use strict';
-        dz_rev_slider_5();
+        dz_rev_slider_3();
         $('.lazy').Lazy();
     });	/*ready*/
 </script>

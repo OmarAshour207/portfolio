@@ -53,7 +53,7 @@
                             </a>
                         </li>
                         <li class="{{ setActive('contact-us') }}">
-                            <a href="{{{ url('contact-us') }}}"><i class="fa fa-phone" style="font-size: 18px;"></i> {{ __('home.contact_us') }}</a>
+                            <a href="{{ url('contact-us') }}"><i class="fa fa-phone" style="font-size: 18px;"></i> {{ __('home.contact_us') }}</a>
                         </li>
                         <li>
                             <a href="javascript:;"> {{ trans('home.language') }}  <i class="fa fa-chevron-down"></i></a>

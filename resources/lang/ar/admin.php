@@ -112,6 +112,9 @@ return [
     'change'                => 'تغيير',
     'view'                  => 'مشاهده',
     'contact_us'            => 'أتصل بنا',
+    'office_hours'          => 'ساعات العمل',
+    'hesitate'              => 'لا تتردد في الاتصال بنا',
+    'happy_customers_said'  => 'العملاء السعداء يقولون',
 
 
 ];

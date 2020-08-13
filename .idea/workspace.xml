@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75a696d1-bdcc-4b4f-9658-7cf8a07a4f67" name="Default Changelist" comment="" />
+    <list default="true" id="75a696d1-bdcc-4b4f-9658-7cf8a07a4f67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ThemeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ThemeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/single_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/single_blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/single_service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/single_service.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/blogs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/blogs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/single_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/single_blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/single_service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/single_service.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/blogs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/blogs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/single_blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/single_blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/single_service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/single_service.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,6 +215,7 @@
       <workItem from="1597054403679" duration="27084000" />
       <workItem from="1597142819799" duration="19673000" />
       <workItem from="1597230773507" duration="25582000" />
+      <workItem from="1597311679877" duration="27285000" />
     </task>
     <servers />
   </component>
@@ -191,25 +227,25 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1597253547796" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1597260412681">
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1597335819610">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597260412681" />
-    <state x="604" y="357" key="NewPhpFileDialog" timestamp="1597259759166">
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1597335819610" />
+    <state x="604" y="357" key="NewPhpFileDialog" timestamp="1597348745431">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="357" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1597259759166" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1597230782877">
+    <state x="604" y="357" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1597348745431" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1597311680650">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1597230782877" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1597311680650" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1597247230173">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1597247230173" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1597233820509">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1597329357119">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597233820509" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597329357119" />
   </component>
 </project>

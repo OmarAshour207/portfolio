@@ -1,4 +1,4 @@
-@extends('site.first.layouts.app')
+@extends('site.fourth.layouts.app')
 
 @section('content')
     <!-- Content -->
@@ -7,12 +7,12 @@
         <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url({{ asset('site/images/banner/bnr1.jpg') }});">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white"> {{ __('home.service_details') }} </h1>
+                    <h1 class="text-white"> {{ $blog->title }} </h1>
                     <!-- Breadcrumb row -->
                     <div class="breadcrumb-row">
                         <ul class="list-inline">
                             <li><a href="{{ url('/') }}"> {{ __('home.home') }} </a></li>
-                            <li>{{ __('admin.service_details') }}</li>
+                            <li> {{ __('home.blogs') }} </li>
                         </ul>
                     </div>
                     <!-- Breadcrumb row END -->
@@ -23,29 +23,39 @@
         <!-- contact area -->
         <div class="content-area">
             <div class="container max-w900">
+                <!-- blog start -->
                 <div class="blog-post blog-single">
                     <div class="dlab-post-meta m-b20">
+                        @php
+                            $title = session('lang') . '_title';
+                            $author = session('lang') . '_author';
+                            $content = session('lang') . '_content';
+                        @endphp
                         <ul>
                             <li class="post-date">
-                                <strong>{{ $service->created_at->format('d M') }}</strong>
-                                <span> {{ $service->created_at->format('Y') }}</span>
+                                <strong>{{ $blog->created_at->format('d M') }}</strong>
+                                <span> {{ $blog->created_at->format('Y') }}</span>
                             </li>
+                            <li class="post-author">
+                                {{ __('home.by') }} {{ $blog->$author }}
                         </ul>
                     </div>
                     <div class="dlab-post-title">
-                        @php
-                            $title = session('lang') . '_title';
-                            $desc = session('lang') . '_description';
-                        @endphp
-                        <h4 class="post-title m-t0">{{ $service->$title }}</h4>
+                        <h4 class="post-title m-t0">
+                            {{ $blog->$title }}
+                        </h4>
                     </div>
                     <div class="dlab-post-media dlab-img-effect zoom-slow">
-                        <img src="{{ $service->service_image }}" alt="">
+                        <img src="{{ $blog->blog_image }}" alt="">
                     </div>
                     <div class="dlab-post-text">
-                        {{ $service->$desc }}
+                        {!! $blog->$content !!}
+                    </div>
+                    <div class="dlab-post-tags clear">
+                        <div class="post-tags">  </div>
                     </div>
                 </div>
+                <!-- blog END -->
             </div>
         </div>
     </div>

@@ -11,8 +11,8 @@ class ThemeSeeder extends Seeder
      */
     public function run()
     {
-        $en_names = ['first', 'second', 'third'];
-        $ar_names = ['الأول', 'الثاني', 'الثالث'];
+        $en_names = ['first', 'second', 'third', 'fourth'];
+        $ar_names = ['الأول', 'الثاني', 'الثالث', 'الرابع'];
         for ($i = 0; $i < count($ar_names); $i++) {
             \App\Theme::create([
                 'ar_title'      => $ar_names[$i],

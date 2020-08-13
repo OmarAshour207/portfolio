@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('site.first.layouts.app')
 
 @section('content')
     <div class="page-content bg-white">
