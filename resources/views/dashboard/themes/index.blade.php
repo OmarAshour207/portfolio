@@ -4,22 +4,24 @@
         $(document).on('click', '.change_theme', function (e) {
             e.preventDefault();
             let url = $(this).data('url');
+            let id = $(this).data('id');
 
             $.ajax({
                 url: url,
                 method: 'POST',
                 beforeSend: function () {
-                    $('.loading').removeClass('d-none');
+                    $('.loading-' + id).removeClass('d-none');
                     $('.data_error').html('');
                     $('.error_message').addClass('d-none');
                     $('.success_message').html('').addClass('d-none');
                 }, success: function (data) {
                     if (data.status == true) {
-                        $('.loading').addClass('d-none');
+                        $('.loading-' + id).addClass('d-none');
                         $('.success_message').html('<h1>' + data.message + '</h1>').removeClass('d-none');
-                        }
+                        window.location.reload();
+                    }
                 }, error: function (response) {
-                    $('.loading').addClass('d-none');
+                    $('.loading-' + id).addClass('d-none');
                     let error_li = '';
                     $.each(response.responseJSON.errors, function(index, value){
                         error_li += '<li>' + value + '</li>'
@@ -114,10 +116,11 @@
                                         @else
                                             <a href="javascript:void(0)"
                                                data-url = "{{ route('themes.change', $theme->id) }}"
+                                               data-id="{{ $theme->id }}"
                                                class="btn btn-sm btn-link change_theme">
                                                 <i class="fa fa-edit fa-2x"></i>
                                                 {{ __('admin.change') }}
-                                                <i class="fa fa-spin fa-spinner loading d-none"></i>
+                                                <i class="fa fa-spin fa-spinner loading-{{ $theme->id }} d-none"></i>
                                             </a>
                                         @endif
                                         <a href="{{ route('theme.show', $theme->en_title) }}" target="_blank">

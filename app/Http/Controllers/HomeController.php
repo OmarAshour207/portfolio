@@ -55,16 +55,17 @@ class HomeController extends Controller
         $ip = $_SERVER['REMOTE_ADDR'];
         $page = \Request::segment(1) ?? 'home';
 
-        $visitors = Visitor::where('ip', $ip)
+        $visitors = DB::table('visitors')
+                ->where('ip', $ip)
                 ->where('page', $page)
-                ->get();
-        $visitors = DB::table('visitors')->where('ip', $ip)->latest()->first();
+                ->latest()
+                ->first();
 
         if($visitors != null) {
-            $created = $visitors->created_at;
-            $afterDay = date( 'Y:m:d H:i:s', (strtotime($created) + (24 * 60 * 60)));
+//            $afterDay = date( 'Y:m:d H:i:s', (strtotime($created) + (24 * 60 * 60)));
+            $created = Carbon::parse($visitors->created_at);
 
-            if($afterDay < Carbon::now()) {
+            if(!$created->isCurrentDay()) {
                 $this->createVisitor($ip, $page);
             }
         }else {
