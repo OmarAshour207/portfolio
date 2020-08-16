@@ -26,23 +26,22 @@
 
 
 
-{{--    @if(session('lang') == 'ar')--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins-rtl.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome-rtl.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.css') }}">--}}
-{{--    @elseif(session('lang') == 'en')--}}
-{{--    @endif--}}
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
-
+    @if(session('lang') == 'ar')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.min.css') }}">
+    @elseif(session('lang') == 'en')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+    @endif
 
     @php
         $colors = [
@@ -64,7 +63,6 @@
             @break
         @endif
     @endforeach
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
 
     @stack('styles')
 

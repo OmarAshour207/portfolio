@@ -26,23 +26,22 @@
 
 
 
-{{--    @if(session('lang') == 'ar')--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins-rtl.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome-rtl.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.css') }}">--}}
-{{--    @elseif(session('lang') == 'en')--}}
-{{--    @endif--}}
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
-
+    @if(session('lang') == 'ar')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.min.css') }}">
+    @elseif(session('lang') == 'en')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+    @endif
 
     @php
         $colors = [
@@ -132,7 +131,7 @@
                                     ></div>
 
                                     <div class="tp-caption tp-shape tp-shapewrapper ov-tp "
-                                         id="slide-100-layer-1"
+                                         id="slide-{{ ($index+1)*100 }}-layer-1"
                                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                          data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
                                          data-width="full"
@@ -150,8 +149,8 @@
                                          data-paddingleft="[0,0,0,0]"
                                          style="z-index: 5;">
                                     </div>
-                                    <div class="tp-caption "
-                                         id="slide-100-layer-3"
+                                    <div class="tp-caption text-center"
+                                         id="slide-{{ ($index+1)*100 }}-layer-3"
                                          data-x="['center','center','center','center']" data-hoffset="['-90','-150','0','0']"
                                          data-y="['middle','middle','middle','middle']" data-voffset="['-90','-100','-80','-90']"
                                          data-fontsize="['65','50','40','30']"
@@ -173,7 +172,7 @@
                                     </div>
                                     <!-- LAYER NR. 3 -->
                                     <div class="tp-caption"
-                                         id="slide-100-layer-4"
+                                         id="slide-{{ ($index+1)*100 }}-layer-4"
                                          data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']"
                                          data-y="['middle','middle','middle','middle']" data-voffset="['50','15','20','10']"
                                          data-fontsize="['18','16','14','14']"
@@ -195,7 +194,7 @@
                                     <!-- LAYER NR. 5 -->
                                     <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
                                        href="{{ url('about') }}" target="_blank"
-                                       id="slide-100-layer-5"
+                                       id="slide-{{ ($index+1)*100 }}-layer-5"
                                        data-x="['center','center','center','center']" data-hoffset="['-515','-340','-85','-65']"
                                        data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']"
                                        data-lineheight="['18','18','18','18']"

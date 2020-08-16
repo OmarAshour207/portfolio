@@ -93,7 +93,8 @@
                                     <div class="dlab-box service-media-bx">
                                         <div class="dlab-media">
                                             <a href="{{ url('about') }}">
-                                                <img src="{{ $project->project_image }}" class="lazy" data-src="{{ $project->project_image }}" alt=""></a>
+                                                <img src="{{ $project->project_image }}" class="lazy" data-src="{{ $project->project_image }}" alt="">
+                                            </a>
                                         </div>
                                         <div class="dlab-info text-center">
                                             @php

@@ -251,7 +251,7 @@
                                                 </ul>
                                             </div>
                                             <div class="dlab-post-title">
-                                                <h4 class="post-title"><a href="{{ url('blogs/' . $blog->id . '/' . $blog->$title) }}">$blog->$title</a></h4>
+                                                <h4 class="post-title"><a href="{{ url('blogs/' . $blog->id . '/' . $blog->$title) }}">{{ $blog->$title }}</a></h4>
                                             </div>
                                             <div class="dlab-post-text">
                                                 <p>{!!  substr($blog->$content, 0, 50) !!}</p>

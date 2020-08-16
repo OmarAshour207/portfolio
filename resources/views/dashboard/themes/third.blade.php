@@ -55,48 +55,27 @@
             <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s" style="background-image:url({{ asset('site/images/overlay/brilliant.png') }});">
                 <div class="container">
                     <div class="section-head text-black text-center">
-                        <h2 class="title">Why Solar Energy is Best</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                        @php $desc = session('lang') . '_description'; @endphp
+                        <h2 class="title"> {!! $aboutUs->$desc !!} </h2>
+                        <p>{{ __('home.lorem_ipsum') }}</p>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="img-carousel-dots owl-theme owl-dots-none owl-carousel owl-btn-center-lr owl-btn-3">
+                                @foreach($services as $index => $service)
                                 <div class="item">
+                                    @php
+                                        $title = session('lang') . '_title';
+                                    @endphp
                                     <div class="service-box style4">
                                         <div class="icon-lg m-b5 text-primary radius">
-                                            <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-worker"></i></a>
+                                            <a href="{{ route('service.show', ['id'=> $service->id, 'title'=> $service->$title]) }}" class="icon-cell"><i class="flaticon-worker"></i></a>
                                         </div>
-                                        <h3 class="title">Solar Panels</h3>
-                                        <div class="no">1</div>
+                                        <h3 class="title"> {{ $service->$title }} </h3>
+                                        <div class="no"> {{ $index+1 }} </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="service-box style4">
-                                        <div class="icon-lg m-b5 text-primary radius">
-                                            <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-factory"></i></a>
-                                        </div>
-                                        <h3 class="title">Wind Turbines</h3>
-                                        <div class="no">2</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="service-box style4">
-                                        <div class="icon-lg m-b5 text-primary radius">
-                                            <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-settings"></i></a>
-                                        </div>
-                                        <h3 class="title">Maintenance</h3>
-                                        <div class="no">3</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="service-box style4">
-                                        <div class="icon-lg m-b5 text-primary radius">
-                                            <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-engineer-1"></i></a>
-                                        </div>
-                                        <h3 class="title">Monitoring</h3>
-                                        <div class="no">4</div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -237,7 +216,7 @@
                                             </ul>
                                         </div>
                                         <div class="dlab-post-title">
-                                            <h4 class="post-title"><a href="{{ url('blogs/' . $blog->id . '/' . $blog->$title) }}">$blog->$title</a></h4>
+                                            <h4 class="post-title"><a href="{{ url('blogs/' . $blog->id . '/' . $blog->$title) }}">{{ $blog->$title }}</a></h4>
                                         </div>
                                         <div class="dlab-post-text">
                                             <p>{!!  substr($blog->$content, 0, 50) !!}</p>

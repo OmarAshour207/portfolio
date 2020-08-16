@@ -77,14 +77,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="dlab-social-icon">
-                        <ul>
-                            <li><a class="site-button facebook circle-sm outline fa fa-facebook" href="#"></a></li>
-                            <li><a class="site-button twitter circle-sm outline fa fa-twitter" href="#"></a></li>
-                            <li><a class="site-button linkedin circle-sm outline fa fa-linkedin" href="#"></a></li>
-                            <li><a class="site-button instagram circle-sm outline fa fa-instagram" href="#"></a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>

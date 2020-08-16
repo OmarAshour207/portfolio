@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ session('lang') == 'ar' ? 'ar' : 'en' }}">
+<html lang="en">
 <head>
     @php
         session('lang') ?? session()->put('lang', app()->getLocale());
@@ -26,22 +26,22 @@
 
 
 
-{{--    @if(session('lang') == 'ar')--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins-rtl.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome-rtl.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">--}}
-{{--        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.css') }}">--}}
-{{--    @elseif(session('lang') == 'en')--}}
-{{--    @endif--}}
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/themify/themify-icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+    @if(session('lang') == 'ar')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.min.css') }}">
+    @elseif(session('lang') == 'en')
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+    @endif
 
 
     @php
@@ -64,15 +64,14 @@
             @break
         @endif
     @endforeach
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('site/plugins/swiper/swiper-bundle.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('site/plugins/revolution/revolution/css/revolution.min.css') }}">
     @stack('styles')
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap">
-
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -107,7 +106,7 @@
 <script>
     jQuery(document).ready(function() {
         'use strict';
-        dz_rev_slider_5();
+        dz_rev_slider_2();
         $('.lazy').Lazy();
     });	/*ready*/
 </script>
