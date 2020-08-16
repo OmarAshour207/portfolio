@@ -37,7 +37,7 @@ class TeamMemberController extends Controller
 
         TeamMember::create($data);
         session()->flash('success', __('admin.added_successfully'));
-        return redirect()->route('testimonials.index');
+        return redirect()->route('team-members.index');
     }
 
     public function edit(TeamMember $teamMember)
@@ -61,7 +61,7 @@ class TeamMemberController extends Controller
 
         $teamMember->update($data);
         session()->flash('success', __('admin.updated_successfully'));
-        return redirect()->route('testimonials.index');
+        return redirect()->route('team-members.index');
     }
 
 
@@ -72,7 +72,7 @@ class TeamMemberController extends Controller
         }
         $teamMember->delete();
         session()->flash('success', __('admin.deleted_successfully'));
-        return redirect()->route('testimonials.index');
+        return redirect()->route('team-members.index');
     }
 
 }
