@@ -59,7 +59,7 @@
                                             {{ __('home.phone') }}
                                         </h5>
                                         <p class="m-b0">{{ setting('phone') }}</p>
-\                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

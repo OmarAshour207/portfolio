@@ -43,11 +43,18 @@ class HomeController extends Controller
         $themeName = getThemeName();
         $sliders = $themeName == 'second' ? Slider::orderBy('id', 'desc')->limit(2)->get() : Slider::orderBy('id', 'desc')->limit(3)->get();
 
+        $services_count = Service::all()->count();
+        $projects_count = Project::all()->count();
+        $team_count = TeamMember::all()->count();
+
+
         return view('site.' . $themeName . '.home',
-            compact('page_filter', 'sliders',
+                    compact('page_filter', 'sliders',
                             'aboutUs', 'contactUs', 'projects',
                             'services', 'teamMembers',
-                            'testimonials', 'blogs'));
+                            'testimonials', 'blogs',
+                            'services_count', 'projects_count',
+                            'team_count'));
     }
 
     public function checkVisitor()
@@ -62,7 +69,6 @@ class HomeController extends Controller
                 ->first();
 
         if($visitors != null) {
-//            $afterDay = date( 'Y:m:d H:i:s', (strtotime($created) + (24 * 60 * 60)));
             $created = Carbon::parse($visitors->created_at);
 
             if(!$created->isCurrentDay()) {
@@ -88,54 +94,71 @@ class HomeController extends Controller
         $testimonials = Testimonial::orderBy('id', 'desc')->limit(3)->get();
         $teamMembers = TeamMember::orderBy('id', 'desc')->limit(4)->get();
         $name = getThemeName();
-        $services = $name == 'second' || $name =='fourth' ? Service::orderBy('id', 'desc')->limit(6)->get() : '';
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+
+        $services_count = Service::all()->count();
+        $projects_count = Project::all()->count();
+        $team_count = TeamMember::all()->count();
 
         return view('site.' . $name . '.about',
-            compact('about', 'testimonials', 'teamMembers', 'services'));
+            compact('about', 'testimonials',
+                    'teamMembers', 'services',
+                    'services_count', 'projects_count',
+                    'team_count'));
     }
 
     public function blogsPage()
     {
         $this->checkVisitor();
         $blogs = Blog::paginate(4);
-        return view('site.' . getThemeName() . '.blogs', compact('blogs'));
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+
+        return view('site.' . getThemeName() . '.blogs', compact('blogs', 'services'));
     }
 
     public function showBlog($id, $title)
     {
         $blog = Blog::findOrFail($id);
-        return view('site.' . getThemeName() . '.single_blog', compact('blog'));
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+
+        return view('site.' . getThemeName() . '.single_blog', compact('blog', 'services'));
     }
 
     public function projectsPage()
     {
         $this->checkVisitor();
-        $projects = Project::orderBy('id', 'desc')->limit(3)->get();
+        $projects = Project::orderBy('id', 'desc')->paginate(6);
         $about = About::first();
-        return view('site.' . getThemeName() . '.projects', compact('projects', 'about'));
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+
+        return view('site.' . getThemeName() . '.projects', compact('projects', 'about', 'services'));
     }
 
     public function servicesPage()
     {
         $this->checkVisitor();
         $name = getThemeName();
-        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+        $services = Service::orderBy('id', 'desc')->paginate(6);
 
         $contactUs = $name == 'second' || $name == 'fourth' ? Contactus::first() : '';
-        $aboutUs = $name == 'second' || $name == 'fourth' ? About::first() : '';
+        $aboutUs = About::first();
         return view('site.' . $name . '.services', compact('services', 'contactUs', 'aboutUs'));
     }
 
     public function SingleService($id, $title)
     {
         $service = Service::FindOrFail($id);
-        return view('site.' . getThemeName() . '.single_service', compact('service'));
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+        $aboutUs = About::first();
+        return view('site.' . getThemeName() . '.single_service', compact('service', 'services', 'aboutUs'));
     }
 
     public function contact()
     {
         $this->checkVisitor();
         $contactUs = Contactus::first();
-        return view('site.' . getThemeName() . '.contact', compact('contactUs'));
+        $services = Service::orderBy('id', 'desc')->limit(6)->get();
+        $aboutUs = About::first();
+        return view('site.' . getThemeName() . '.contact', compact('contactUs', 'services', 'aboutUs'));
     }
 }

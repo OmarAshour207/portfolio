@@ -178,7 +178,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/backup/htdocs/ecommerce_upgrade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -214,6 +214,7 @@
       <workItem from="1597311679877" duration="27508000" />
       <workItem from="1597437609099" duration="2841000" />
       <workItem from="1597587939887" duration="10149000" />
+      <workItem from="1597755208122" duration="52000" />
     </task>
     <servers />
   </component>

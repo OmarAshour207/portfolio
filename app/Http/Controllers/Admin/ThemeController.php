@@ -66,10 +66,17 @@ class ThemeController extends Controller
         $name = $request->route('name');
         $sliders = $name == 'second' ? Slider::orderBy('id', 'desc')->limit(2)->get() : Slider::orderBy('id', 'desc')->limit(3)->get();
         $contactUs = Contactus::first();
+
+        $services_count = Service::all()->count();
+        $projects_count = Project::all()->count();
+        $team_count = TeamMember::all()->count();
+
         return view('dashboard.themes.' . $name ,
             compact('sliders',
                 'aboutUs', 'projects',
                 'services', 'teamMembers',
-                'testimonials', 'blogs', 'contactUs'));
+                'testimonials', 'blogs',
+                'contactUs', 'services_count',
+                'projects_count','team_count'));
     }
 }
