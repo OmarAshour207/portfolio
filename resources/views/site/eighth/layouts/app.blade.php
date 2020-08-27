@@ -4,43 +4,55 @@
     @php
         session('lang') ?? session()->put('lang', app()->getLocale());
     @endphp
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="keywords" content="{{ setting('meta_keywords') }}" />
     <meta name="author" content="{{ setting('meta_author') }}" />
     <meta name="description" content="{{ setting('meta_description') }}" />
-    <meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
-    <meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
-    <meta property="og:image" content="" />
-    <meta name="format-detection" content="telephone=no">
-
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="{{ asset('site/images/favicon.ico') }}" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('site/images/favicon.png') }}" />
-
-    <!-- PAGE TITLE HERE -->
-    <title> {{ setting('title') }} </title>
-
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>{{ setting('title') }}</title>
 
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{{ asset('site/part2/images/favicon.ico') }}"/>
 
+    <!--== bootstrap -->
+    <link href="{{ asset('site/part2/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== animate -->
+    <link href="{{ asset('site/part2/css/animate.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== fontawesome -->
+    <link href="{{ asset('site/part2/css/fontawesome-all.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== themify-icons -->
+    <link href="{{ asset('site/part2/css/themify-icons.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== audioplayer -->
+    <link href="{{ asset('site/part2/css/audioplayer/plyr.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== magnific-popup -->
+    <link href="{{ asset('site/part2/css/magnific-popup/magnific-popup.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== owl-carousel -->
+    <link href="{{ asset('site/part2/css/owl-carousel/owl.carousel.css') }}" rel="stylesheet" type="text/css" />
+
+    <!--== base -->
+    <link href="{{ asset('site/part2/css/base.css') }}" rel="stylesheet" type="text/css" />
 
     @if(session('lang') == 'ar')
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/rtl.min.css') }}">
+        <link href="{{ asset('site/part2/css/shortcodes-rtl.css') }}" rel="stylesheet" type="text/css" />
+        <!--== default-theme -->
+        <link href="{{ asset('site/part2/css/style-rtl.css') }}" rel="stylesheet" type="text/css" />
+        <!--== responsive -->
+        <link href="{{ asset('site/part2/css/responsive-rtl.css') }}" rel="stylesheet" type="text/css" />
     @elseif(session('lang') == 'en')
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/plugins.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/fontawesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/line-awesome/css/line-awesome.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/flaticon/flaticon.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/style.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('site/css/templete.min.css') }}">
+        <!--== shortcodes -->
+        <link href="{{ asset('site/part2/css/shortcodes.css') }}" rel="stylesheet" type="text/css" />
+        <!--== default-theme -->
+        <link href="{{ asset('site/part2/css/style.css') }}" rel="stylesheet" type="text/css" />
+        <!--== responsive -->
+        <link href="{{ asset('site/part2/css/responsive.css') }}" rel="stylesheet" type="text/css" />
     @endif
 
     @php
@@ -66,47 +78,59 @@
 
     @stack('styles')
 
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap">
-    <link rel="stylesheet" type="text/css" href="{{ asset('site/plugins/revolution/revolution/css/revolution.min.css') }}">
 </head>
-<body id="bg">
+<body>
 <div class="page-wraper">
-    <div id="loading-area"></div>
 
-    @include('site.second.layouts.header')
+    <div id="ht-preloader">
+        <div class="loader clear-loader"><img src="{{ asset('site/part2/images/loader.gif') }}" alt=""></div>
+    </div>
+
+    @include('site.eighth.layouts.header')
 
     @yield('content')
 
-    @include('site.second.layouts.footer')
+    @include('site.eighth.layouts.footer')
 
-    <button class="scroltop style3 radius" type="button"><i class="fa fa-arrow-up"></i></button>
+<!--back-to-top start-->
+<div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fas fa-chevron-up"></i></a></div>
+<!--back-to-top end-->
+
 </div>
 
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="{{ asset('site/js/combining.js') }}"></script><!-- CONTACT JS  -->
-<script src="{{ asset('site/js/jquery.lazy.min.js') }}"></script>
+<!--== theme -->
+<script src="{{ asset('site/part2/js/theme.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-<script src="{{ asset('site/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
-<script src="{{ asset('site/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
-<script src="{{ asset('site/js/rev.slider.js') }}"></script>
-<!-- REVOLUTION JS FILES -->
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('site/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+<!--== audioplayer -->
+<script src="{{ asset('site/part2/js/audioplayer/plyr.min.js') }}"></script>
 
+<!--== magnific-popup -->
+<script src="{{ asset('site/part2/js/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
 
-@stack('scripts')
-<script>
-    jQuery(document).ready(function() {
-        'use strict';
-        dz_rev_slider_3();
-        $('.lazy').Lazy();
-    });	/*ready*/
-</script>
+<!--== owl-carousel -->
+<script src="{{ asset('site/part2/js/owl-carousel/owl.carousel.min.js') }}"></script>
+
+<!--== parallax -->
+<script src="{{ asset('site/part2/js/parallax/parallaxie.min.js') }}"></script>
+
+<!--== counter -->
+<script src="{{ asset('site/part2/js/counter/counter.js') }}"></script>
+
+<!--== particle -->
+<script src="{{ asset('site/part2/js/particle/jquery.particleground.min.js') }}"></script>
+
+<!--== countdown -->
+<script src="{{ asset('site/part2/js/countdown/jquery.countdown.min.js') }}"></script>
+
+<!--== isotope -->
+<script src="{{ asset('site/part2/js/isotope/isotope.pkgd.min.js') }}"></script>
+
+<!--== contact-form -->
+<script src="{{ asset('site/part2/js/contact-form/contact-form.js') }}"></script>
+
+<!--== theme-script -->
+<script src="{{ asset('site/part2/js/theme-script.js') }}"></script>
 
 </body>
 </html>

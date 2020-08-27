@@ -1,66 +1,100 @@
-<!-- header -->
-<header class="site-header mo-left header-full header header-transparent header-sidenav onepage white">
-    <!-- main header -->
-    <div class="sticky-header main-bar-wraper navbar-expand-lg">
-        <div class="main-bar clearfix">
-            <div class="container-fluid p-r0">
-                <div class="header-content-bx">
-                    <!-- website logo -->
-                    <div class="logo-header logo-white">
-                        <a href="{{ url('/') }}"><img src="{{ getLogo() }}" alt=""/></a>
-                    </div>
-                    <div class="extra-nav">
-                        <div class="extra-cell">
-                            <ul>
-                                <li class="search-btn">
-                                    <a href="javascript:;" class="menu-icon">
-                                        <div class="menu-icon-in">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<!--header start-->
+<header id="site-header" class="header header-4">
+    <div class="top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-4">
+            <div class="topbar-link">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="mailto:{{ setting('email') }}">
+                    <i class="far fa-envelope-open"></i>{{ setting('email') }}</a>
+                </li>
+                <li class="list-inline-item md-mt-1">
+                  <a href="tel:{{ setting('phone') }}"> <i class="fas fa-mobile-alt"></i>{{ setting('phone') }}</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </div>
-    <div class="header-nav navbar-collapse collapse full-sidenav navbar">
-        <div class="logo-header logo-dark">
-            <a href="{{ url('/') }}"><img src="{{ getLogo() }}" alt=""/></a>
-        </div>
-        <ul class="nav navbar-nav ">
-            <li><a href="{{ url('/') }}" class="scroll nav-link">{{ __('home.home') }}</a></li>
-            <li><a href="{{ url('about') }}" class="scroll nav-link">{{ __('home.about_us') }}</a></li>
-            <li><a href="{{ url('services') }}" class="scroll nav-link">{{ __('home.our_services') }}</a></li>
-            <li><a href="{{ url('projects') }}" class="scroll nav-link">{{ __('home.our_projects') }}</a></li>
-            <li><a href="{{ url('blogs') }}" class="scroll nav-link">{{ trans('home.blogs') }}</a></li>
-            <li><a href="{{ url('contact-us') }}" class="scroll nav-link">{{ __('home.contact_us') }}</a></li>
-            <li><a href="{{ url('lang/ar') }}" class="scroll nav-link">{{ trans('home.arabic') }}</a></li>
-            <li><a href="{{ url('lang/en') }}" class="scroll nav-link">{{ trans('home.english') }}</a></li>
-        </ul>
-        <div class="social-menu">
-            <ul>
+          </div>
+          <div class="col-lg-6 col-md-4 text-left">
+            <div class="social-icons social-hover top-social-list">
+              <ul class="list-inline">
                 @php
                     $socialSites = ['facebook', 'twitter', 'instagram'];
                 @endphp
                 @for($i = 0; $i < count($socialSites); $i++)
                     @if(setting($socialSites[$i]) != '')
-                        <li>
-                            <a class="fa fa-{{ $socialSites[$i] }}" href="{{ setting($socialSites[$i]) }}"></a>
+                        <li class="social-{{ $socialSites[$i] }}">
+                            <a href="{{ setting($socialSites[$i]) }}">
+                                <i class="fab fa-{{ $socialSites[$i] }}"></i>
+                            </a>
                         </li>
                     @endif
                 @endfor
-            </ul>
-            <p class="copyright-head">© {{ setting('title') }} </p>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="menu-close">
-        <i class="ti-close"></i>
+    <div id="header-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand logo" href="index.html">
+                <img id="logo-img" class="img-center" src="{{ getLogo() }}" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- Left nav -->
+                <ul class="nav navbar-nav {{ session('lang') == 'en' ? 'ml-auto' : 'mr-auto' }}">
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActiveHome('') }}" href="{{ url('/') }}">{{ __('home.home') }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActive('about') }}" href="{{ url('about') }}">{{ __('admin.about') }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActive('services') }}" href="{{ url('services') }}">{{ __('admin.our_services') }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActive('projects') }}" href="{{ url('projects') }}">{{ __('admin.our_projects') }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActive('blogs') }}" href="{{ url('blogs') }}">{{ __('admin.blogs') }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ setActive('contact-us') }}" href="{{ url('contact-us') }}">{{ __('admin.contact_us') }}</a>
+                    </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('home.language') }}</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                             <a href="{{ url('lang/ar') }}"><i class="fa fa-flag"></i> {{ __('home.arabic') }}</a>
+                        </li>
+                        <li>
+                             <a href="{{ url('lang/en') }}"><i class="fa fa-flag"></i> {{ __('home.english') }}</a>
+                        </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- main header END -->
 </header>
-<!-- header END -->
+
+
+
