@@ -86,11 +86,11 @@
         <div class="loader clear-loader"><img src="{{ asset('site/part2/images/loader.gif') }}" alt=""></div>
     </div>
 
-    @include('site.fifth.layouts.header')
+    @include('site.sixth.layouts.header')
 
     @yield('content')
 
-    @include('site.fifth.layouts.footer')
+    @include('site.sixth.layouts.footer')
 
 <!--back-to-top start-->
 <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fas fa-chevron-up"></i></a></div>
