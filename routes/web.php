@@ -29,6 +29,7 @@ Route::get('/blogs/{id}/{title}', 'HomeController@showBlog')->name('blog.show');
 
 Route::get('/lang/{language}', 'HomeController@changeLanguage');
 
+Route::match(['get', 'post'], 'webhook', 'MessengerController@index');
 
 // Admin ROUTES
 Auth::routes(['register' => false]);
@@ -63,6 +64,9 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
     Route::get('settings/seo', 'SeoController@showSeoPage')->name('settings.seo');
     Route::post('settings/seo', 'SeoController@store')->name('settings.seo.store');
 
+    Route::get('settings/analytics', 'AnalyticsController@showPage')->name('settings.analytics');
+    Route::post('settings/analytics', 'AnalyticsController@store')->name('settings.analytics');
+
     Route::resource('website-settings', 'SettingController');
 
     Route::resource('logos', 'LogoController');
@@ -77,4 +81,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
     Route::post('themes/{id}', 'ThemeController@changeTheme')->name('themes.change');
 
     Route::get('themes/{name}', 'ThemeController@showTheme')->name('theme.show');
+
+    Route::get('settings/tokens', 'FacebookController@showPage')->name('settings.tokens');
+    Route::post('settings/tokens', 'FacebookController@store')->name('settings.tokens');
 });

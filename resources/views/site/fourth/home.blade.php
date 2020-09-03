@@ -38,7 +38,7 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; white-space: nowrap; font-size: 22px; line-height: 28px; font-weight: 700; color:#fff;font-family: 'Poppins', sans-serif;">
+                                         style="z-index: 6;left: 465px; white-space: nowrap; font-size: 22px; line-height: 28px; font-weight: 700; color:#fff;font-family: 'Poppins', sans-serif;">
                                         <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">Sale Car – Buy Car – Car Service</div>
                                     </div>
                                     <div class="tp-caption tp-resizeme rs-parallaxlevel-1"
@@ -60,7 +60,7 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; white-space: nowrap; font-size: 205px; color:#fff; line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                                         style="z-index: 6; white-space: nowrap; font-size: 205px; color:#fff; line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif; left: 465px;">
                                         <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">Auto Mobile</div>
                                     </div>
                                     <div class="tp-caption tp-resizeme rs-parallaxlevel-1"
@@ -82,7 +82,7 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; white-space: nowrap; font-size: 180px; color:rgba(255,255,255,0.05); line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif; ">
+                                         style="z-index: 6; white-space: nowrap; font-size: 180px; color:rgba(255,255,255,0.05); line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif; left: 465px;">
                                         <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">Industry</div>
                                     </div>
                                     <div class="tp-caption tp-resizeme rs-parallaxlevel-1"
@@ -104,8 +104,8 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; white-space: nowrap; font-size: 205px; color:#fff; line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif;">
-                                        <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">Industry<span class="text-primary">.</span></div>
+                                         style="z-index: 6; white-space: nowrap; font-size: 205px; color:#fff; line-height: 240px; font-weight: 700; font-family: 'Poppins', sans-serif; left: 324px;">
+                                        <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">Industry</div>
                                     </div>
                                     <!-- LAYER NR. 2 -->
                                     <div class="tp-caption tp-resizeme rs-parallaxlevel-1"
@@ -125,9 +125,10 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; white-space: nowrap; font-size: 22px; line-height: 28px; font-weight: 400; color:#fff;font-family: 'Poppins', sans-serif;">
-                                        <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%">
-                                            {!! $slider->$desc !!}</div>
+                                         style="z-index: 6; left: 465px; white-space: nowrap; font-size: 22px; line-height: 28px; font-weight: 400; color:#fff;font-family: 'Poppins', sans-serif;">
+                                        <div class="rs-looped rs-wave"  data-speed="3" data-angle="0" data-radius="2px" data-origin="50% 50%" style="font-size: 30px;">
+                                            {!! $slider->$desc !!}
+                                        </div>
                                     </div>
                                     <!-- LAYER NR. 8 -->
                                     <div class="tp-caption rev-btn rs-parallaxlevel-1"
@@ -146,7 +147,7 @@
                                          data-paddingtop="[0,0,0,0]"
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
-                                         data-paddingleft="[0,0,0,0]" style="z-index: 12; font-size: 16px;">
+                                         data-paddingleft="[0,0,0,0]" style="z-index: 12; font-size: 16px; left: 465px;">
                                         <a href="{{ url('services') }}" class="site-button btnhover19 button-md outline outline-2 white">{{ __('home.our_services') }}</a>
                                     </div>
                                     <!-- LAYER NR. 8 -->

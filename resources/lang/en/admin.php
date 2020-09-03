@@ -112,5 +112,9 @@ return [
     'change'                => 'Change',
     'view'                  => 'View',
     'contact_us'            => 'Contact Us',
+    'analytics'             => 'Google Analytics',
+    'token'                 => 'Token',
+    'how_get_token'         => 'How to get facebook token',
+    'facebook_link'         => 'Facebook Link',
 
 ];

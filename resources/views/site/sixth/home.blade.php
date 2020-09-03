@@ -121,14 +121,14 @@
     @if (in_array('our_projects', $page_filter))
     <section class="o-hidden">
         <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-8 col-md-10 ml-auto mr-auto">
-            <div class="section-title">
-                <h2 class="title">{{ __('home.latest') }} <span> {{ __('home.projects') }} </span></h2>
-                <p class="mb-0">Misto Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                    <div class="section-title">
+                        <h2 class="title">{{ __('home.latest') }} <span> {{ __('home.projects') }} </span></h2>
+                        <p class="mb-0">Misto Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
         <div class="container-fluid p-0">
         <div class="row">
@@ -209,6 +209,7 @@
     @endif
     <!--service end-->
 
+        <br>
     <!--subscribe start-->
     <section class="dark-bg py-5" data-bg-img="{{ asset('site/part2/images/bg/01.jpg') }}" data-overlay="8">
         <div class="container">
@@ -223,7 +224,6 @@
         </div>
     </section>
     <!--subscribe end-->
-
 
 
     <!--testimonial start-->

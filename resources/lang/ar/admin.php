@@ -115,6 +115,10 @@ return [
     'office_hours'          => 'ساعات العمل',
     'hesitate'              => 'لا تتردد في الاتصال بنا',
     'happy_customers_said'  => 'العملاء السعداء يقولون',
+    'analytics'             => 'تحليلات جوجل',
+    'token'                 => 'التوكن',
+    'how_get_token'         => 'كيفيه احضار فيسبوك توكن',
+    'facebook_link'         => 'لينك فيسبوك',
 
 
 ];

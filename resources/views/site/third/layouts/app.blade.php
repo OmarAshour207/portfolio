@@ -4,7 +4,21 @@
     @php
         session('lang') ?? session()->put('lang', app()->getLocale());
     @endphp
-    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ setting('google_analytics') }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', '{{ setting('google_analytics') }}');
+        </script>
+
+        <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="{{ setting('meta_keywords') }}" />
     <meta name="author" content="{{ setting('meta_author') }}" />
@@ -168,10 +182,11 @@
                                          data-paddingright="[10,10,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">{!! $slider->$title !!}
+                                         style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">
+                                        {!! $slider->$title !!}
                                     </div>
                                     <!-- LAYER NR. 3 -->
-                                    <div class="tp-caption"
+                                    <div class="tp-caption text-center"
                                          id="slide-{{ ($index+1)*100 }}-layer-4"
                                          data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']"
                                          data-y="['middle','middle','middle','middle']" data-voffset="['50','15','20','10']"

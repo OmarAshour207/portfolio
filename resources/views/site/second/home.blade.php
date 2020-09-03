@@ -54,7 +54,7 @@
                                         $title = session('lang') . '_title';
                                         $desc = session('lang') . '_description';
                                     @endphp
-                                    <div class="tp-caption   rs-parallaxlevel-4"
+                                    <div class="tp-caption rs-parallaxlevel-4"
                                          id="slide-3239-layer-1"
                                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                          data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
@@ -74,7 +74,8 @@
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
 
-                                         style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">{!! $slider->$title !!} <br/> {!! $slider->$desc !!}
+                                         style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">
+                                        {!! $slider->$title !!} <br/> {!! $slider->$desc !!}
                                     </div>
                                 </li>
                                 <!-- SLIDE  -->
@@ -134,7 +135,8 @@
                         <div class="row">
                             <div class="col-lg-12 text-center service-info">
                                 <h2 class="title text-white">Amazing things happen to your business when we connect those dots of utility and value.</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                @php $desc = session('lang') . '_description'; @endphp
+                                <p>{{ $aboutUs->$desc }}</p>
                             </div>
                         </div>
                     </div>
