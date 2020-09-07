@@ -84,4 +84,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 
     Route::get('settings/tokens', 'FacebookController@showPage')->name('settings.tokens');
     Route::post('settings/tokens', 'FacebookController@store')->name('settings.tokens');
+
+    Route::get('clear/notifications', 'NotificationController@clearAll')->name('clear.notifications');
+    Route::get('view/notifications', 'NotificationController@viewAll')->name('view.notifications');
 });

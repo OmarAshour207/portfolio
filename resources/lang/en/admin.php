@@ -116,5 +116,14 @@ return [
     'token'                 => 'Token',
     'how_get_token'         => 'How to get facebook token',
     'facebook_link'         => 'Facebook Link',
+    'notifications'         => 'Notifications',
+    'all_notifications'     => 'All Notifications',
+    'view_all'              => 'View All',
+    'clear_all'             => 'Clear All',
+    'sent_message'          => 'Sent Message',
+    'date'                  => 'Date',
+    'status'                => 'Status',
+    'unread'                => 'Unread',
+    'viewed'                => 'Viewed',
 
 ];

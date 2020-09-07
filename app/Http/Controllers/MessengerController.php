@@ -45,6 +45,8 @@ class MessengerController extends Controller
             $response = $this->showProjects($id);
         } elseif ($message == __('bot.'. $lang .'.blog')) {
             $response = $this->showBlog($id);
+        } elseif ($message == __('bot.' . $lang . '.contact_us')) {
+            $response = $this->contactUs($id);
         } else {
             $response = $this->mainMenu($id, $user);
         }
@@ -85,8 +87,23 @@ class MessengerController extends Controller
                         "content_type" => "text",
                         "title" => __('bot.'. $lang .'.visit_website'),
                         "payload" => "http://monraytravel.com/appointments"
+                    ], [
+                        "content_type" => "text",
+                        "title" => __('admin.contact_us'),
+                        "payload" => "http://monraytravel.com/appointments"
                     ]
                 ]
+            ]
+        ];
+    }
+
+    public function contactUs($id)
+    {
+        $lang = Cache::get('lang');
+        return [
+            'recipient' => ['id'    => $id],
+            'message'   => [
+                'text'  => __('bot.'. $lang .'.call_us_on') .' '. setting('phone')
             ]
         ];
     }

@@ -119,6 +119,15 @@ return [
     'token'                 => 'التوكن',
     'how_get_token'         => 'كيفيه احضار فيسبوك توكن',
     'facebook_link'         => 'لينك فيسبوك',
+    'notifications'         => 'الأشعارات',
+    'all_notifications'     => 'كل الأشعارات',
+    'view_all'              => 'مشاهده الكل',
+    'clear_all'             => 'مسح الكل',
+    'sent_message'          => 'تم أرسال رساله',
+    'date'                  => 'التاريخ',
+    'status'                => 'الحاله',
+    'unread'                => 'غير مقروء',
+    'viewed'                => 'تمت المشاهده',
 
 
 ];

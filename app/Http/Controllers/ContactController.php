@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\ContactNotification;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -22,6 +23,11 @@ class ContactController extends Controller
         ]);
 
         Contact::create($data);
+        ContactNotification::create([
+            'name'  => $data['name'],
+            'content'=> ' ' . __('admin.sent_message'),
+            'status'=> 0
+        ]);
         session()->flash('success', trans('home.sent_successfully'));
         return redirect()->back();
     }

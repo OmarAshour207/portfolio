@@ -14,6 +14,8 @@ return[
         'blog'              => 'المقالات',
         'arabic'            => 'العربيه',
         'english'           => 'English',
+        'contact_us'        => 'أتصل بنا',
+        'call_us_on'        => 'أتصل بنا علي',
 
     ],
     'en'    => [
@@ -28,5 +30,7 @@ return[
         'blog'              => 'Blog',
         'arabic'            => 'العربيه',
         'english'           => 'English',
+        'contact_us'        => 'Contact Us',
+        'call_us_on'        => 'Call Us on',
     ]
 ];
