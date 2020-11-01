@@ -77,7 +77,11 @@
                                 <h5>{{ $service->$title }}</h5>
                             </div>
                             <div class="featured-desc">
-                                <p>{{ substr($service->$desc, 0, 30) }}</p>
+                                @if (session('lang') == 'ar')
+                                    <p>{{ mb_substr($service->$desc, 0, 30) }}</p>
+                                @else
+                                    <p>{{ substr($service->$desc, 0, 30) }}</p>
+                                @endif
                             </div>
                             </div>
                         </div>
@@ -119,7 +123,11 @@
                                 </div>
                                 <div class="service-description">
                                 <h4> {{ $service->$title }} </h4>
-                                <p> {{ substr($service->$desc, 0, 30) }} </p>
+                                    @if (session('lang') == 'ar')
+                                        <p> {{ mb_substr($service->$desc, 0, 30) }} </p>
+                                    @else
+                                        <p> {{ substr($service->$desc, 0, 30) }} </p>
+                                    @endif
                                 <a href="{{ route('service.show', ['id'=> $service->id, 'title'=> $service->$title]) }}">
                                     {{ __('home.read_more') }} <i class="fas fa-arrow-left"></i>
                                 </a>

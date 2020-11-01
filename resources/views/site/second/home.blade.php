@@ -334,7 +334,11 @@
                                                 <h4 class="post-title"><a href="{{ url('blogs/' . $blog->id .'/'.$blog->$title) }}"> {{ $blog->$title }} </a></h4>
                                             </div>
                                             <div class="dlab-post-text">
-                                                {!!  substr($blog->$content, 0, 20) !!}
+                                                @if (session('lang') == 'ar')
+                                                    {!!  mb_substr($blog->$content, 0, 20) !!}
+                                                @else
+                                                    {!!  substr($blog->$content, 0, 20) !!}
+                                                @endif
                                             </div>
                                             <div class="dlab-post-readmore">
                                                 <a href="{{ url('blogs/' . $blog->id .'/'.$blog->$title) }}" title="{{ $blog->$title }}" rel="bookmark" class="site-button btnhover14">{{ __('home.read_more') }}</a>

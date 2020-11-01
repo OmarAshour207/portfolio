@@ -261,7 +261,13 @@
                           $desc = session('lang') . '_description';
                       @endphp
                     <div class="portfolio-title"> <span>{{ $project->$title }}</span>
-                      <h4>{{ substr($project->$desc, 0, 50) }}</h4>
+                      <h4>
+                          @if (session('lang') == 'ar')
+                              {{ mb_substr($project->$desc, 0, 50) }}</h4>
+                        @else
+                              {{ substr($project->$desc, 0, 50) }}</h4>
+                        @endif
+
                     </div>
                     <div class="portfolio-icon">
                       <a class="popup popup-img" href="{{ asset('site/part2/images/portfolio/large/01.jpg') }}"> <i class="flaticon-magnifier"></i>
@@ -470,7 +476,11 @@
                         </a>
                      </h5>
                     </div>
-                    {!!  substr($blog->$content, 0, 50) !!}
+                      @if (session('lang') == 'ar')
+                          {!! mb_substr($blog->$content, 0, 50)  !!} ...
+                      @else
+                          {!! substr($blog->$content, 0, 50)  !!} ...
+                      @endif
                   </div>
                   <div class="post-bottom">
                     <div class="post-meta">

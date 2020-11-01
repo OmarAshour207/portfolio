@@ -47,7 +47,13 @@
                       </a>
                     </h5>
                 </div>
-                <p> {!! substr($blog->$content, 0, 30) !!} </p>
+                  <p>
+                      @if (session('lang') == 'ar')
+                          {!! mb_substr($blog->$content, 0, 30)  !!} ...
+                      @else
+                          {!! substr($blog->$content, 0, 30)  !!} ...
+                      @endif
+                  </p>
               </div>
               <div class="post-bottom">
                 <a class="post-btn" href="{{ url('blogs/' . $blog->id .'/'.$blog->$title) }}">
