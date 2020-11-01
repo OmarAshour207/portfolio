@@ -13,7 +13,6 @@
                     </nav>
                     <h1 class="m-0"> {{ trans('admin.settings_website') }} </h1>
                 </div>
-                <a href="{{ route('website-settings.create') }}" class="btn btn-success ml-3">{{ trans('admin.create') }} <i class="material-icons">add</i></a>
             </div>
         </div>
 

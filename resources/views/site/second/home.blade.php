@@ -74,8 +74,11 @@
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
 
+
                                          style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">
-                                        {!! $slider->$title !!} <br/> {!! $slider->$desc !!}
+                                        @if (session('lang') == 'en')
+                                            {!! $slider->$title !!} <br/> {!! $slider->$desc !!}
+                                        @endif
                                     </div>
                                 </li>
                                 <!-- SLIDE  -->

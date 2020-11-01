@@ -77,9 +77,12 @@ return [
     'service'               => 'الخدمه',
     'details'               => 'تفاصيل',
     'related'               => 'المرتبطه',
-    'projects'              => 'المشاريع',
     'blog_details'          => 'تفاصيل المقال',
     'for_help'              => 'للمساعده',
     'get_in'                => 'تواصل',
     'touch'                 => 'معنا',
+    'newsletter'            => 'أخر الأخبار',
+    'connect_with_us'       => 'تواصل معنا',
+    'here_short_stat_about_us'  => 'هنا بعض الاحصائيات عن انفسنا',
+    'services'              => 'خدماتنا'
 ];

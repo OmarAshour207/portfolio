@@ -53,7 +53,13 @@
                             </h4>
                         </div>
                         <div class="dlab-post-text">
-                            <p> {!! substr($blog->$content, 0, 30)  !!} ...</p>
+                            <p>
+                            @if (session('lang') == 'ar')
+                                    {!! mb_substr($blog->$content, 0, 100)  !!}
+                            @else
+                                    {!! substr($blog->$content, 0, 100)  !!}
+                            @endif
+                            </p>
                         </div>
                         <div class="dlab-post-readmore">
                             <a href="{{ route('blog.show', ['id' => $blog->id, 'title' => $blog->$title]) }}" title="{{ __('home.read_more') }}" rel="bookmark" class="site-button">

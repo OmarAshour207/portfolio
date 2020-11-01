@@ -59,7 +59,7 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $project->ar_title }}
+                                        {{ substr($project->ar_title, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
@@ -67,7 +67,7 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $project->en_title }}
+                                        {{ substr($project->en_title, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
@@ -75,14 +75,14 @@
                             <td style="width: 120px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ substr($project->ar_description, 0, 20) }}
+                                        {{ substr($project->ar_description, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 120px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ substr($project->en_description, 0, 20) }}
+                                        {{ substr($project->en_description, 0, 30) }}
                                     </div>
                                 </div>
                             </td>

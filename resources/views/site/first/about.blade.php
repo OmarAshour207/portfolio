@@ -50,36 +50,28 @@
                 <div class="container">
                     <div class="section-content text-center text-white">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-6 m-b30">
                                 <div class="counter-style-5">
                                     <div class="">
-                                        <span class="counter">6810</span>
+                                        <span class="counter">{{ $services_count }}</span>
                                     </div>
-                                    <span class="counter-text">Passionate Employee</span>
+                                    <span class="counter-text">{{ __('admin.services') }}</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-6 m-b30">
                                 <div class="counter-style-5">
                                     <div class="">
-                                        <span class="counter">4060</span>
+                                        <span class="counter">{{ $projects_count }}</span>
                                     </div>
-                                    <span class="counter-text">Modern Factory</span>
+                                    <span class="counter-text">{{ __('home.projects') }}</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-6 m-b30">
                                 <div class="counter-style-5">
                                     <div class="">
-                                        <span class="counter">3164</span>
+                                        <span class="counter">{{ $team_count }}</span>
                                     </div>
-                                    <span class="counter-text">Factory in Worldwide</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
-                                <div class="counter-style-5">
-                                    <div class="">
-                                        <span class="counter">1852</span>
-                                    </div>
-                                    <span class="counter-text">International Awards</span>
+                                    <span class="counter-text">{{ __('admin.team_members') }}</span>
                                 </div>
                             </div>
                         </div>

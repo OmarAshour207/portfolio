@@ -333,11 +333,19 @@
                                                         <strong>{{ $blog->created_at->format('d M') }}</strong>
                                                         <span> {{ $blog->created_at->format('Y') }}</span>
                                                     </li>
-                                                    <li class="post-author"> {{ __('home.by') . $blog->$author }} </li>
+                                                    <li class="post-author"> {{ __('home.by') . ' '. $blog->$author }} </li>
                                                 </ul>
                                             </div>
                                             <div class="dlab-post-title">
-                                                <h3 class="post-title"><a href="{{ url('blogs/' . $blog->id .$blog->$title) }}">{!!  substr($blog->$content, 0, 20) !!}</a></h3>
+                                                <h3 class="post-title">
+                                                    <a href="{{ url('blogs/' . $blog->id . '/ ' .$blog->$title) }}">
+                                                        @if (session('lang') == 'ar')
+                                                            {!!  mb_substr($blog->$content, 0, 27) !!}
+                                                        @else
+                                                            {!!  substr($blog->$content, 0, 30) !!}
+                                                        @endif
+                                                    </a>
+                                                </h3>
                                             </div>
                                             <div class="dlab-post-readmore">
                                                 <a href="{{ url('blogs/' . $blog->id . '/' . $blog->$title) }}" title="READ MORE" rel="bookmark" class="site-button btnhover13">{{ __('home.read_more') }}</a>

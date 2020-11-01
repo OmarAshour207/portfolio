@@ -8,7 +8,13 @@
         <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-12 ml-auto mr-auto">
-            <h1 class="title mb-0">{{ __('home.about') }} <span>{{ __('home.us') }}</span></h1>
+                <h1 class="title mb-0">
+                    @if (session('lang') == 'ar')
+                        {{ __('home.about_us') }}
+                    @else
+                        {{ __('home.about') }} <span>{{ __('home.us') }}</span>
+                    @endif
+                </h1>
             </div>
         </div>
         <nav aria-label="breadcrumb" class="page-breadcrumb">
@@ -44,7 +50,13 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 md-mt-3">
-          <h2 class="title">{{ __('home.about') }} <span>{{ __('home.us') }}</span></h2>
+          <h2 class="title">
+              @if (session('lang') == 'ar')
+                  {{ __('home.about_us') }}
+              @else
+                  {{ __('home.about') }} <span>{{ __('home.us') }}</span>
+              @endif
+          </h2>
           <p class="lead text-black">
               @php
                   $desc = session('lang') . '_description';

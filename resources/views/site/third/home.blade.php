@@ -62,8 +62,8 @@
                 <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s" style="background-image:url({{ asset('site/images/overlay/brilliant.png') }});">
                     <div class="container">
                         <div class="section-head text-black text-center">
-                            <h2 class="title">Why Solar Energy is Best</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                            <h2 class="title">{{ __('admin.stat') }}</h2>
+                            <p>{{ __('home.here_short_stat_about_us') }}</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
@@ -73,8 +73,8 @@
                                             <div class="icon-lg m-b5 text-primary radius">
                                                 <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-worker"></i></a>
                                             </div>
-                                            <h3 class="title">Solar Panels</h3>
-                                            <div class="no">1</div>
+                                            <h3 class="title">{{ __('admin.team_members') }}</h3>
+                                            <div class="no">{{ $team_count }}</div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -82,8 +82,8 @@
                                             <div class="icon-lg m-b5 text-primary radius">
                                                 <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-factory"></i></a>
                                             </div>
-                                            <h3 class="title">Wind Turbines</h3>
-                                            <div class="no">2</div>
+                                            <h3 class="title">{{ __('home.projects') }}</h3>
+                                            <div class="no">{{ $projects_count }}</div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -91,17 +91,8 @@
                                             <div class="icon-lg m-b5 text-primary radius">
                                                 <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-settings"></i></a>
                                             </div>
-                                            <h3 class="title">Maintenance</h3>
-                                            <div class="no">3</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="service-box style4">
-                                            <div class="icon-lg m-b5 text-primary radius">
-                                                <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-engineer-1"></i></a>
-                                            </div>
-                                            <h3 class="title">Monitoring</h3>
-                                            <div class="no">4</div>
+                                            <h3 class="title">{{ __('admin.services') }}</h3>
+                                            <div class="no">{{ $services_count }}</div>
                                         </div>
                                     </div>
                                 </div>

@@ -61,14 +61,14 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $testimonial->ar_name }}
+                                        {{ substr($testimonial->ar_name , 0, 30)}}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $testimonial->en_name }}
+                                        {{ substr($testimonial->en_name , 0, 30)}}
                                     </div>
                                 </div>
                             </td>
@@ -76,14 +76,14 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $testimonial->ar_title }}
+                                        {{ substr($testimonial->ar_title, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $testimonial->en_title }}
+                                        {{ substr($testimonial->en_title, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
@@ -91,14 +91,14 @@
                             <td style="width: 120px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ substr($testimonial->ar_description, 0, 20) }}
+                                        {{ substr($testimonial->ar_description, 0, 30) }}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 120px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ substr($testimonial->en_description, 0, 20) }}
+                                        {{ substr($testimonial->en_description, 0, 30) }}
                                     </div>
                                 </div>
                             </td>

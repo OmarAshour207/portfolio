@@ -172,7 +172,6 @@
                           <div class="section-title mb-0">
                             <h6>{{ __('home.our_projects') }}</h6>
                             <h2 class="title-2">{{ __('home.latest') }} {{ __('home.projects') }}</h2>
-                            <p class="mb-0">Misto Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                           </div>
                         </div>
                       </div>

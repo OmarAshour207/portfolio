@@ -41,7 +41,7 @@
                         @php $title = session('lang') . '_title'; @endphp
                     var mock = { name: '{{ $teamMember->$title }}', size: 2};
                     this.emit('addedfile', mock);
-                    this.emit('thumbnail', mock, '{{ $service->teamMember_image }}');
+                    this.emit('thumbnail', mock, '{{ $teamMember->teamMember_image }}');
                     this.emit('complete', mock);
                     $('.dz-progress').remove();
                     @endif

@@ -61,14 +61,14 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $teamMember->ar_name }}
+                                        {{ mb_substr($teamMember->ar_name , 0, 20)}}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $teamMember->en_name }}
+                                        {{ substr($teamMember->en_name , 0, 20)}}
                                     </div>
                                 </div>
                             </td>
@@ -76,14 +76,14 @@
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $teamMember->ar_title }}
+                                        {{ mb_substr($teamMember->ar_title, 0, 20) }}
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 40px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $teamMember->en_title }}
+                                        {{ substr($teamMember->en_title, 0, 20) }}
                                     </div>
                                 </div>
                             </td>
@@ -91,7 +91,7 @@
                             <td style="width: 120px;">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ substr($teamMember->ar_description, 0, 20) }}
+                                        {{ mb_substr($teamMember->ar_description, 0, 20) }}
                                     </div>
                                 </div>
                             </td>

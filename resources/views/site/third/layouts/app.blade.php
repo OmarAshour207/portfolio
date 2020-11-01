@@ -183,7 +183,9 @@
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
                                          style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">
-                                        {!! $slider->$title !!}
+                                        @if (session('lang') == 'en')
+                                            {!! $slider->$title !!} <br/>
+                                        @endif
                                     </div>
                                     <!-- LAYER NR. 3 -->
                                     <div class="tp-caption text-center"
@@ -204,7 +206,10 @@
                                          data-paddingright="[0,0,0,0]"
                                          data-paddingbottom="[0,0,0,0]"
                                          data-paddingleft="[0,0,0,0]"
-                                         style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">{!! $slider->$desc !!}
+                                         style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
+                                        @if (session('lang') == 'en')
+                                            {!! $slider->$desc !!}
+                                        @endif
                                     </div>
                                     <!-- LAYER NR. 5 -->
                                     <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"

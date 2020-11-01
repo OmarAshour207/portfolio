@@ -173,8 +173,13 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 ml-auto mr-auto">
             <div class="section-title">
-              <h2 class="title">{{ __('home.our') }} <span> {{ __('admin.services') }}</span></h2>
-              <p class="mb-0 text-white">Misto Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <h2 class="title">
+                  @if (session('lang') == 'ar')
+                      {{ __('admin.our_services') }}
+                  @else
+                      {{ __('home.our') }} <span>{{ __('home.services') }}</span>
+                  @endif
+              </h2>
             </div>
           </div>
         </div>
@@ -225,7 +230,8 @@
     </section>
     <!--subscribe end-->
 
-
+<br>
+<br>
     <!--testimonial start-->
     @if (in_array('testimonials', $page_filter))
     <section class="dark-bg parallaxie" data-bg-img="{{ asset('site/part2/images/bg/02.jpg') }}" data-overlay="9">
@@ -233,7 +239,13 @@
         <div class="row text-center">
           <div class="col-md-8 ml-auto mr-auto">
             <div class="section-title">
-              <h2 class="title">{{ __('home.our') }} <span> {{ __('home.testimonial') }} </span></h2>
+              <h2 class="title">
+                  @if (session('lang') == 'ar')
+                      {{ __('admin.testimonials') }}
+                  @else
+                      {{ __('home.our') }} <span> {{ __('home.testimonial') }} </span>
+                  @endif
+              </h2>
             </div>
           </div>
         </div>

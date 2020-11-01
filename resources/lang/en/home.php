@@ -69,8 +69,6 @@ return [
     'company'               => 'Company',
     'our'                   => 'Our',
     'why'                   => 'Why',
-    'latest'                => 'Latest',
-    'projects'              => 'Projects',
     'testimonial'           => 'Testimonial',
     'for_your_company'      => 'For Your Company',
     'latest'                => 'Latest',
@@ -84,4 +82,7 @@ return [
     'for_help'              => 'For Help',
     'get_in'                => 'Get In',
     'touch'                 => 'Touch',
+    'newsletter'            => 'Newsletter',
+    'connect_with_us'       => 'Connect With Us',
+    'here_short_stat_about_us'  => 'Here some statistics About Us'
 ];

@@ -69,7 +69,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ setActive('about') }}" href="{{ url('about') }}">{{ __('admin.about') }}</a>
+                        <a class="nav-link {{ setActive('about') }}" href="{{ url('about') }}">{{ __('home.about_us') }}</a>
                     </li>
 
                     <li class="nav-item">

@@ -125,5 +125,6 @@ return [
     'status'                => 'Status',
     'unread'                => 'Unread',
     'viewed'                => 'Viewed',
-
+    'service_details'       => 'Service Details',
+    'color'                 => 'Color'
 ];

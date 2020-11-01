@@ -128,6 +128,8 @@ return [
     'status'                => 'الحاله',
     'unread'                => 'غير مقروء',
     'viewed'                => 'تمت المشاهده',
+    'service_details'       => 'تفاصيل الخدمه',
+    'color'                 => 'اللون',
 
 
 ];

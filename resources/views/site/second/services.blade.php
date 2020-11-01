@@ -141,21 +141,26 @@
                 <div class="choses-info text-white">
                     <div class="container-fluid">
                         <div class="row choses-info-content">
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.2s">
-                                <h2 class="m-t0 m-b10 font-weight-400 font-45"><i class="flaticon-alarm-clock m-r10"></i><span class="counter">15</span>+</h2>
-                                <h4 class="font-weight-300 m-t0">Years in Business</h4>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-6 p-a30 wow zoomIn" data-wow-delay="0.2s">
+                                <h2 class="m-t0 m-b10 font-weight-400 font-45">
+                                    <i class="flaticon-alarm-clock m-r10"></i>
+                                    <span class="counter">{{ $projects_count }}</span>+
+                                </h2>
+                                <h4 class="font-weight-300 m-t0">{{ __('home.projects') }}</h4>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.4s">
-                                <h2 class="m-t0 m-b10 font-weight-400 font-45"><i class="flaticon-worker m-r10"></i><span class="counter">700</span>+</h2>
-                                <h4 class="font-weight-300 m-t0">Happy Clients</h4>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.4s">
+                                <h2 class="m-t0 m-b10 font-weight-400 font-45">
+                                    <i class="flaticon-worker m-r10"></i>
+                                    <span class="counter"> {{ $team_count }}</span>+
+                                </h2>
+                                <h4 class="font-weight-300 m-t0"> {{ __('admin.team_members') }}</h4>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.6s">
-                                <h2 class="m-t0 m-b10 font-weight-400 font-45"><i class="flaticon-settings m-r10"></i><span class="counter">50</span>+</h2>
-                                <h4 class="font-weight-300 m-t0">Technical Experts</h4>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.8s">
-                                <h2 class="m-t0 m-b10 font-weight-400 font-45"><i class="flaticon-presentation m-r10"></i><span class="counter">200</span>+</h2>
-                                <h4 class="font-weight-300 m-t0">Apps Delivered</h4>
+                            <div class="col-lg-4 col-md-12 col-sm-6 col-6 p-a30 wow zoomIn" data-wow-delay="0.6s">
+                                <h2 class="m-t0 m-b10 font-weight-400 font-45">
+                                    <i class="flaticon-settings m-r10"></i>
+                                    <span class="counter">{{ $services_count }}</span>+
+                                </h2>
+                                <h4 class="font-weight-300 m-t0">{{ __('admin.services') }}</h4>
                             </div>
                         </div>
                     </div>

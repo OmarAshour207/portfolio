@@ -408,8 +408,13 @@
                     <div class="row text-center">
                       <div class="col-md-8 ml-auto mr-auto">
                         <div class="section-title">
-                          <h2 class="title">{{ __('home.our') }} <span> {{ __('home.testimonial') }} </span></h2>
-                          <p class="mb-0">Meet With Misto Great Team. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi vero minima impedit aliquam id.</p>
+                          <h2 class="title">
+                              @if (session('lang') == 'ar')
+                                  {{ __('admin.testimonials') }}
+                              @else
+                                  {{ __('home.our') }} <span> {{ __('home.testimonial') }} </span>
+                              @endif
+                          </h2>
                         </div>
                       </div>
                     </div>

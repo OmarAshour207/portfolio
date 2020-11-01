@@ -140,9 +140,16 @@ class HomeController extends Controller
         $name = getThemeName();
         $services = Service::orderBy('id', 'desc')->paginate(6);
 
+        $services_count = Service::all()->count();
+        $projects_count = Project::all()->count();
+        $team_count = TeamMember::all()->count();
+
         $contactUs = $name == 'second' || $name == 'fourth' ? Contactus::first() : '';
         $aboutUs = About::first();
-        return view('site.' . $name . '.services', compact('services', 'contactUs', 'aboutUs'));
+        return view('site.' . $name . '.services',
+                compact('services', 'contactUs',
+                                'aboutUs', 'services_count',
+                                'projects_count', 'team_count'));
     }
 
     public function SingleService($id, $title)

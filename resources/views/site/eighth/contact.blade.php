@@ -8,7 +8,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-12 ml-auto mr-auto">
-          <h1 class="title mb-0">{{ __('home.contact') }} <span>{{ __('home.us') }}</span></h1>
+          <h1 class="title mb-0">
+              @if (session('lang') == 'ar')
+                  {{ __('home.contact_us') }}
+              @else
+                  {{ __('home.contact') }} <span>{{ __('home.us') }}</span>
+              @endif
+          </h1>
         </div>
       </div>
       <nav aria-label="breadcrumb" class="page-breadcrumb">

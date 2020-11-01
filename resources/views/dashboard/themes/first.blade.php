@@ -183,8 +183,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <div class="dlab-separator bg-primary"></div>
-                                            <h2 class="dlab-tilte counter">1226</h2>
-                                            <p>{{ trans('home.happy_client') }}</p>
+                                            <h2 class="dlab-tilte counter">{{ $services_count }}</h2>
+                                            <p>{{ trans('admin.services') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -195,8 +195,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <div class="dlab-separator bg-primary"></div>
-                                            <h2 class="dlab-tilte counter">1552</h2>
-                                            <p>{{ trans('home.workers_hand') }}</p>
+                                            <h2 class="dlab-tilte counter">{{ $projects_count }}</h2>
+                                            <p>{{ trans('home.projects') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,8 +207,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <div class="dlab-separator bg-primary"></div>
-                                            <h2 class="dlab-tilte counter">1156</h2>
-                                            <p>{{ trans('home.active_experts') }}</p>
+                                            <h2 class="dlab-tilte counter">{{ $team_count }}</h2>
+                                            <p>{{ trans('admin.team_members') }}</p>
                                         </div>
                                     </div>
                                 </div>

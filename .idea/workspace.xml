@@ -2,14 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a696d1-bdcc-4b4f-9658-7cf8a07a4f67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_11_1_20__12_23_PM.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessengerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessengerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/portfolio/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/bot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/abouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/abouts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/blogs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/blogs/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/contacts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/contacts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/services/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/team-members/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/team-members/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/team-members/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/team-members/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/testimonials/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/testimonials/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/first.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/themes/first.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/eighth/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/eighth/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/eighth/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/eighth/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/eighth/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/eighth/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/eighth/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/eighth/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/eighth/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/eighth/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/fifth/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/fifth/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/fifth/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/fifth/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/fifth/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/fifth/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/fifth/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/fifth/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/fifth/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/fifth/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/second/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/second/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/seventh/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/seventh/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/seventh/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/seventh/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/seventh/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/seventh/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/seventh/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/seventh/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/seventh/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/seventh/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/sixth/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sixth/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/sixth/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sixth/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/sixth/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sixth/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/sixth/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sixth/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/sixth/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sixth/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/third/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/third/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +61,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="portfolio" />
@@ -152,7 +193,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -166,6 +206,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -178,6 +219,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -197,12 +239,13 @@
       <workItem from="1597587939887" duration="10149000" />
       <workItem from="1597755208122" duration="52000" />
       <workItem from="1599101342282" duration="17815000" />
-      <workItem from="1599437772859" duration="3061000" />
+      <workItem from="1599437772859" duration="6226000" />
+      <workItem from="1604226095859" duration="7910000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599438519784">
