@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2020 at 12:04 PM
+-- Generation Time: Nov 03, 2020 at 01:44 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -41,7 +41,7 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `ar_description`, `en_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Ut ad rerum fugiat', 'Qui perspiciatis re', 'FSfNN3SMwrsuGbIIoi086fIEehwedIpP66AR7hgJ.png', '2020-08-10 15:21:56', '2020-08-10 15:21:56');
+(1, 'وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه وصف عننا بلعربيه', 'About description in english About description in english About description in english About description in english About description in english About description in english', 'FSfNN3SMwrsuGbIIoi086fIEehwedIpP66AR7hgJ.png', '2020-08-10 15:21:56', '2020-11-01 08:42:36');
 
 -- --------------------------------------------------------
 
@@ -69,9 +69,9 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `ar_author`, `en_author`, `ar_title`, `en_title`, `ar_content`, `en_content`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Quis magnam amet ab', 'Natus modi velit ape', 'Nemo quis quaerat sa', 'In do enim voluptate', '<p>Delectus, dolores qu.</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-08-12 16:40:39'),
-(2, 'Quis magnam amet ab', 'Natus modi velit ape', 'Nemo quis quaerat sa', 'In do enim voluptate', '<p>Delectus, dolores qu.</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-08-12 16:40:39'),
-(3, 'Quis magnam amet ab', 'Natus modi velit ape', 'Nemo quis quaerat sa', 'In do enim voluptate', '<p>Delectus, dolores qu.</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-08-12 16:40:39');
+(1, 'أسم المؤلف بالعربيه', 'Natus modi velit ape', 'عنوان المقال بالعربيه', 'In do enim voluptate', '<p>محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;محتوي المقال بالعربيه&nbsp;</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-11-01 09:39:59'),
+(2, 'أسم المؤلف بالعربيه', 'Natus modi velit ape', 'عنوان المقال بالعربيه', 'In do enim voluptate', '<p>محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-08-12 16:40:39'),
+(3, 'أسم المؤلف بالعربيه', 'Natus modi velit ape', 'عنوان المقال بالعربيه', 'In do enim voluptate', '<p>محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه&nbsp;محتوي المقال بالانجليزيه</p>', '<p>Dolorem optio, id, v.</p>', 'Accusamus commodo un', 'Neque tempor aut cup', 'j4PMmXvaiBqFySH3i1xXoBqWTzudP96dDTAkZEml.jpeg', '2020-08-12 16:40:39', '2020-08-12 16:40:39');
 
 -- --------------------------------------------------------
 
@@ -94,7 +94,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `phone`, `email`, `message`, `created_at`, `updated_at`) VALUES
-(1, 'omar', NULL, 'omar@gmail.com', 'how are you ?', '2020-09-06 22:48:21', '2020-09-06 22:48:21');
+(1, 'omar', '01117541513', 'omar@gmail.com', 'how are you ?', '2020-09-06 22:48:21', '2020-09-06 22:48:21');
 
 -- --------------------------------------------------------
 
@@ -245,9 +245,9 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Omnis id perspiciat', 'Dolore harum pariatu', 'Amet sed molestiae', 'Reprehenderit simil', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-08-12 15:55:55'),
-(2, 'Omnis id perspiciat', 'Dolore harum pariatu', 'Amet sed molestiae', 'Reprehenderit simil', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-08-12 15:55:55'),
-(3, 'Omnis id perspiciat', 'Dolore harum pariatu', 'Amet sed molestiae', 'Reprehenderit simil', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-08-12 15:55:55');
+(1, 'لقب المشروع بالعربيه', 'Dolore harum pariatu', 'وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه', 'english description english description english description english description english description english description english description', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-11-01 08:37:50'),
+(2, 'لقب المشروع بالعربيه', 'Dolore harum pariatu', 'وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه', 'Reprehenderit simil', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-08-12 15:55:55'),
+(3, 'لقب المشروع بالعربيه', 'Dolore harum pariatu', 'وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه وصف المشروع بالعربيه', 'Reprehenderit simil', 'Exercitationem persp', 'Aut dolorem nulla et', 'U9ax8BTzPoTDF6XcDVcm9CQhrlIehNu7q4ZGbM4G.jpeg', '2020-08-12 15:55:55', '2020-08-12 15:55:55');
 
 -- --------------------------------------------------------
 
@@ -273,12 +273,12 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
-(2, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
-(3, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
-(4, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
-(5, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
-(6, 'Dolorem animi et re', 'Delectus veniam vo', 'Qui labore et non et', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04');
+(1, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'ميتا تاج بالعربيه', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-11-01 08:20:00'),
+(2, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
+(3, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
+(4, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
+(5, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04'),
+(6, 'لقب الخدمه بالعربيه', 'Delectus veniam vo', 'وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه وصف الخدمه باللغه العربيه', 'Accusamus rem minus', 'Exercitation delenit', 'Nostrum tempor sunt', 'ASYVRvCSVklxP1u3Jt4xfin88wRwDlpIeJlFkzTZ.jpeg', '2020-08-12 14:30:04', '2020-08-12 14:30:04');
 
 -- --------------------------------------------------------
 
@@ -302,9 +302,9 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, '<p>Non ullam voluptas n.</p>', '<p>Perspiciatis, volupt.</p>', '<h3>Labore commodo ab qu.</h3>', '<h3>Qui voluptas at enim.</h3>', 'mKXWVCRH70LvvkzZlcYvhOQ0jLeS5Lf7v0QNN5FH.jpeg', '2020-08-11 15:26:04', '2020-08-26 10:47:17'),
-(2, '<p>Voluptatem magna nul.</p>', '<p>Natus qui qui offici.</p>', '<p>Nostrum sit, cupidat.</p>', '<p>Quia saepe saepe con.</p>', 'kd4N2KusE1Y3RZ0uJP75vmpid83jS6aDjG1bwysB.jpeg', '2020-08-11 15:26:23', '2020-08-26 10:44:44'),
-(3, '<p>Perferendis molestia.</p>', '<p>Maxime voluptate ips.</p>', '<p>Aspernatur lorem vol.</p>', '<p>Officia in est reici.</p>', 'TJRUD1dBGapvJgUCbj16HCGOXxc8raMiUp4EHpfA.jpeg', '2020-08-11 15:26:41', '2020-08-26 10:44:57');
+(1, '<p>لقب بالعرربيه للسلايدر</p>', '<p>Perspiciatis, volupt.</p>', '<h3>وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;</h3>', '<h3>Qui voluptas at enim.</h3>', 'mKXWVCRH70LvvkzZlcYvhOQ0jLeS5Lf7v0QNN5FH.jpeg', '2020-08-11 15:26:04', '2020-11-01 08:17:56'),
+(2, '<p>لقب بالعرربيه للسلايدر</p>', '<p>Natus qui qui offici.</p>', '<h3>وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;</h3>', '<p>Quia saepe saepe con.</p>', 'kd4N2KusE1Y3RZ0uJP75vmpid83jS6aDjG1bwysB.jpeg', '2020-08-11 15:26:23', '2020-08-26 10:44:44'),
+(3, '<p>لقب بالعرربيه للسلايدر</p>', '<p>Maxime voluptate ips.</p>', '<h3>وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;وصف عربي&nbsp;</h3>', '<p>Officia in est reici.</p>', 'TJRUD1dBGapvJgUCbj16HCGOXxc8raMiUp4EHpfA.jpeg', '2020-08-11 15:26:41', '2020-08-26 10:44:57');
 
 -- --------------------------------------------------------
 
@@ -332,7 +332,8 @@ CREATE TABLE `team_members` (
 --
 
 INSERT INTO `team_members` (`id`, `ar_name`, `en_name`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Paki Norman', 'Irene Brewer', 'Ut sint non lorem no', 'Ut qui corrupti qua', 'Quo sed eum quasi vo', 'Porro delectus tota', 'Qui fuga Reprehende', 'Laboris eu tempora m', 'VQdun4lLYj3aTypkTW27tQjdMMWhFTeRQ7jyigrr.jpeg', '2020-08-12 16:40:07', '2020-08-12 16:40:07');
+(1, 'أسم الفريق بالعربيه', 'Irene Brewer', 'لقب فريق العمل بالعربيه', 'Ut qui corrupti qua', 'تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه', 'Porro delectus tota', 'Qui fuga Reprehende', 'Laboris eu tempora m', 'VQdun4lLYj3aTypkTW27tQjdMMWhFTeRQ7jyigrr.jpeg', '2020-08-12 16:40:07', '2020-11-01 09:07:37'),
+(2, 'أسم الفريق بالعربيه', 'Irene Brewer', 'لقب فريق العمل بالعربيه', 'Ut qui corrupti qua', 'تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه تقيييم العميل بالعربيه', 'Porro delectus tota', 'Qui fuga Reprehende', 'Laboris eu tempora m', 'VQdun4lLYj3aTypkTW27tQjdMMWhFTeRQ7jyigrr.jpeg', '2020-08-12 16:40:07', '2020-11-01 09:07:37');
 
 -- --------------------------------------------------------
 
@@ -360,9 +361,9 @@ CREATE TABLE `testimonials` (
 --
 
 INSERT INTO `testimonials` (`id`, `ar_name`, `en_name`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Armando Munoz', 'Vivian Hamilton', 'Ut laborum id amet', 'Fugiat aut aut odit', 'Minus aliquid dolore', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-08-12 16:41:12'),
-(2, 'Armando Munoz', 'Vivian Hamilton', 'Ut laborum id amet', 'Fugiat aut aut odit', 'Minus aliquid dolore', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-08-12 16:41:12'),
-(3, 'Armando Munoz', 'Vivian Hamilton', 'Ut laborum id amet', 'Fugiat aut aut odit', 'Minus aliquid dolore', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-08-12 16:41:12');
+(1, 'اسم المراجعه بالعربيه', 'Vivian Hamilton', 'لقب المراجعه بالعربيه', 'Fugiat aut aut odit', 'وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-11-01 08:55:10'),
+(2, 'اسم المراجعه بالعربيه', 'Vivian Hamilton', 'لقب المراجعه بالعربيه', 'Fugiat aut aut odit', 'وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-08-12 16:41:12'),
+(3, 'اسم المراجعه بالعربيه', 'Vivian Hamilton', 'لقب المراجعه بالعربيه', 'Fugiat aut aut odit', 'وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه وصف المراجعه بالعربيه', 'consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla modi. Totam mollitia incidunt vero cupiditate obcaecati', 'Ut aut voluptatem q', 'Ut provident ullam', 'xGfEEuIm1Wvj2ZmIeyyrZOTnrvkz3Idq8XwGNbrQ.jpeg', '2020-08-12 16:41:12', '2020-08-12 16:41:12');
 
 -- --------------------------------------------------------
 
@@ -384,14 +385,14 @@ CREATE TABLE `themes` (
 --
 
 INSERT INTO `themes` (`id`, `ar_title`, `en_title`, `status`, `created_at`, `updated_at`) VALUES
-(5, 'الأول', 'first', 1, '2020-08-26 09:20:19', '2020-08-26 09:59:11'),
-(6, 'الثاني', 'second', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20'),
-(7, 'الثالث', 'third', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20'),
-(8, 'الرابع', 'fourth', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20'),
-(9, 'الخامس', 'fifth', 0, '2020-08-26 09:20:20', '2020-08-26 09:59:11'),
-(10, 'السادس', 'sixth', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20'),
-(11, 'السابع', 'seventh', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20'),
-(12, 'الثامن', 'eighth', 0, '2020-08-26 09:20:20', '2020-08-26 09:20:20');
+(5, 'الأول', 'first', 0, '2020-08-26 09:20:19', '2020-11-01 09:42:51'),
+(6, 'الثاني', 'second', 0, '2020-08-26 09:20:20', '2020-11-01 09:52:34'),
+(7, 'الثالث', 'third', 0, '2020-08-26 09:20:20', '2020-11-01 10:05:47'),
+(8, 'الرابع', 'fourth', 0, '2020-08-26 09:20:20', '2020-11-01 10:07:45'),
+(9, 'الخامس', 'fifth', 0, '2020-08-26 09:20:20', '2020-11-01 10:19:55'),
+(10, 'السادس', 'sixth', 0, '2020-08-26 09:20:20', '2020-11-01 10:26:26'),
+(11, 'السابع', 'seventh', 0, '2020-08-26 09:20:20', '2020-11-01 10:33:26'),
+(12, 'الثامن', 'eighth', 1, '2020-08-26 09:20:20', '2020-11-01 10:33:26');
 
 -- --------------------------------------------------------
 
@@ -456,7 +457,13 @@ INSERT INTO `visitors` (`id`, `ip`, `page`, `created_at`, `updated_at`) VALUES
 (1530, '127.0.0.1', 'home', '2020-08-27 01:22:17', '2020-08-27 01:22:17'),
 (1531, '127.0.0.1', 'home', '2020-09-03 00:53:22', '2020-09-03 00:53:22'),
 (1532, '127.0.0.1', 'home', '2020-09-06 22:24:22', '2020-09-06 22:24:22'),
-(1533, '127.0.0.1', 'contact-us', '2020-09-06 22:24:44', '2020-09-06 22:24:44');
+(1533, '127.0.0.1', 'contact-us', '2020-09-06 22:24:44', '2020-09-06 22:24:44'),
+(1534, '127.0.0.1', 'home', '2020-11-01 08:10:04', '2020-11-01 08:10:04'),
+(1535, '127.0.0.1', 'services', '2020-11-01 08:36:30', '2020-11-01 08:36:30'),
+(1536, '127.0.0.1', 'about', '2020-11-01 08:43:27', '2020-11-01 08:43:27'),
+(1537, '127.0.0.1', 'projects', '2020-11-01 09:38:16', '2020-11-01 09:38:16'),
+(1538, '127.0.0.1', 'blogs', '2020-11-01 09:38:25', '2020-11-01 09:38:25'),
+(1539, '127.0.0.1', 'contact-us', '2020-11-01 09:41:17', '2020-11-01 09:41:17');
 
 -- --------------------------------------------------------
 
@@ -666,7 +673,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT for table `team_members`
 --
 ALTER TABLE `team_members`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `testimonials`
@@ -690,7 +697,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1534;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1540;
 
 --
 -- AUTO_INCREMENT for table `website_settings`
