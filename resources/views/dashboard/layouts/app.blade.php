@@ -35,6 +35,8 @@
 
     <link href="{{ asset('dashboard/css/noty.css') }}" rel="stylesheet">
     <script src="{{ asset('dashboard/js/noty.js') }}" type="text/javascript"></script>
+    <link href="{{ asset('dashboard/css/sunset.css') }}" rel="stylesheet">
+
 
 
     @stack('admin_styles')

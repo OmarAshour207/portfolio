@@ -3,6 +3,7 @@
     <script>
         new Noty({
             type: 'alert',
+            theme:'sunset',
             layout: 'topRight',
             text: "{{ session('success') }}",
             timeout: 2000,
